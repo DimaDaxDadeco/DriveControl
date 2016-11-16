@@ -1,0 +1,3120 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+
+template,
+[hidden] {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+optgroup {
+  font-weight: bold;
+}
+button,
+input,
+select {
+  overflow: visible;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+[disabled] {
+  cursor: default;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+@font-face {
+    font-family: Plantagenet Cherokee;
+    src: url(../fonts/Plantagenet Cherokee.ttf);
+}
+@font-face {
+    font-family: Minion Pro;
+    src: url(../fonts/Minion Pro.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: GothaProIta;
+    src: url(../fonts/Gotham_Cyrillic/GothaProMed.otf);
+}
+@font-face {
+    font-family: Quicksand_Bold;
+    src: url(../fonts/quicksand/Quicksand_Bold.otf);
+}
+@font-face {
+    font-family: GothaProReg;
+    src: url(../fonts/Gotham_Cyrillic/GothaProReg.otf);
+}
+@font-face {
+    font-family: gothamThin;
+    src: url(../fonts/ufonts.com_gotham-thin.ttf);
+}
+body {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  color: #000;
+}
+.advertising {
+  height: 60px;
+  background: rgba(0,0,0,0.5);
+}
+header .top {
+  padding: 30px 0 18px 0;
+}
+header .logo {
+  text-align: center;
+}
+header .DriveControl {
+  border-left: 1px solid #000;
+  margin-top: 11px;
+}
+header .DriveControl h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 600;
+  font-family: Plantagenet Cherokee;
+}
+header .noLie {
+  font-size: 1.563em;
+  font-family: Minion Pro;
+  margin-top: 20.5px;
+  text-align: right;
+}
+header .socialNetworks {
+  margin-top: 27px
+}
+header .socialNetworks .imgBlock {
+  width: 17px;
+  height: 17px;
+}
+header .socialNetworks .ok .imgBlock {
+  background: url(../img/ok.png);
+}
+header .socialNetworks .vk .imgBlock {
+  background: url(../img/vk.png);
+}
+header .socialNetworks .facebook .imgBlock {
+  background: url(../img/Facebook.png);
+}
+header .socialNetworks .forma1 .imgBlock {
+  background: url(../img/Forma_1.png);
+}
+header .socialNetworks .imgBlock:hover {
+  background-position: 0 18px;
+}
+header .bottom {
+  background: #fff;
+  font-family: Roboto-Bold;
+  font-size: 1.1em;
+}
+nav {
+  padding-top: 40px;
+}
+nav ul {
+  display: table;
+  height: 40px;
+}
+nav ul li {
+  list-style-type: none;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 1px solid #dfdfdf;
+  text-align: center;
+}
+nav ul li.nobordr {
+  border-right:0;
+}
+nav ul li.current,nav ul li.current a{
+  color: #fff;
+  text-decoration: none;
+  background: #1ea361;
+}
+nav ul li a:hover,nav ul li.current a:hover {
+  text-decoration: none;
+  color: #000;
+}
+nav ul li a,nav ul li a:focus {
+  color: #000;
+  text-decoration: none;
+}
+nav ul li:last-child {
+  border-right: 0;
+}
+.green {
+  color: #1ea361;
+}
+.cabinet .student {
+  padding-top: 16px;
+}
+.cabinet .identification {
+  padding: 12px 0 0 15px;
+}
+.cabinet input{
+  font-size: 0.625em;
+  width: 100%;
+  height: 20px;
+  color: #606060;
+  border: 1px solid #000;
+  padding-left: 8px;
+  font-family: Roboto-Light;
+}
+.cabinet input:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.cabinet input.error {
+  border-color: red;
+  box-shadow: 0 2px 10px 1px rgba(226,21,21,0.2)
+}
+.cabinet input[type="submit"] {
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  font-family: Roboto-Medium;
+  border-radius: 3px;
+  font-size: 0.6875em;
+}
+.cabinet input[type="submit"]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.cabinet input[type="submit"]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.cabinet .code, .cabinet .enter {
+  padding: 8px 0 0 15px;
+}
+.cabinet .forgotPassword {
+  text-align: right;
+  padding: 6px 0 0 15px;
+}
+.cabinet .forgotPassword a,.cabinet .forgotPassword a:hover, .cabinet .forgotPassword a:focus {
+  font-family: Roboto-Light;
+  font-size: 0.5625em;
+  color: #000;
+}
+/*СЛАЙДЕР*/
+.sliderContainer {
+  padding: 30px;
+}
+.sliderContainer img {
+  display: block;
+  width: 100%;
+}
+.sliderContainer .slick-dots {
+  text-align: center;
+  margin-top: -40px;
+  z-index: 5;
+  position: relative;
+}
+.sliderContainer .slick-dots li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+.sliderContainer .slick-dots li button {
+  border: 1px solid #000;
+  background: #eaeaea;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  color: rgba(0,0,0,0);
+  outline: none;
+}
+.sliderContainer .slick-dots li.slick-active button {
+  background: #1ea361;
+}
+/*---- */
+.main, .slider {
+  padding:0;
+}
+section {
+  background: #fff;
+  margin-top: 15px;
+}
+.banner {
+  padding-top: 20px;
+}
+.banner .info {
+  height: 70px;
+  overflow: hidden;
+  background: #a6a6a6;
+}
+.news, .smi {
+  margin-top: 20px;
+}
+.news .title, .smi .title {
+  height: 50px;
+}
+.news .title .left, .smi .title .left {
+  font-family: Roboto-Bold;
+  font-size: 1.125em;
+}
+.news .title .seeAll, .smi .title .seeAll {
+  text-align: right;
+}
+.news .title .seeAll input, .smi .title .seeAll input {
+  border: 0;
+  background: #ffc107;
+  font-size: 0.6875em;
+  font-family: Roboto-Medium;
+  color: #fff;
+  padding: 5px 12px 5px 12px;
+}
+.news .title .seeAll input:hover, .smi .title .seeAll input:hover {
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+}
+.news .title .seeAll input:focus, .smi .title .seeAll input:focus {
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.littleNews ul li {
+  display: inline-block;
+  position: relative;
+}
+.littleNews .infoPhoto {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  font-family: Roboto-Medium;
+  font-size: 0.8125em;
+  width: 303px;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px 0 10px 0;
+  min-height: 44px;
+  text-align: left;
+}
+.littleNews .infoPhoto p {
+  margin: 0;
+  line-height: 12px;
+}
+.littleNews .infoPhoto .right {
+  font-family: Roboto-Light;
+  font-size: 0.6em;
+  text-align: right;
+  padding-top: 3px;
+}
+.littleNews ul {
+  display: table;
+}
+.littleNews ul li {
+  display: table-cell;
+  text-align: center;
+}
+.littleNews ul li:first-child {
+  text-align: left;
+}
+.littleNews ul li:last-child {
+  text-align: right;
+}
+.littleNews ul li:nth-child(2) .infoPhoto{
+  left: 50%;
+  margin-left: -151.5px;
+}
+.littleNews ul li:last-child .infoPhoto {
+  right: 0;
+}
+.smiText ul {
+  display: table;
+  width: 100%;
+}
+.smiText ul li {
+  display: table-cell;
+  text-align: center;
+  width: 24%;
+  border-right: 1px solid #dfdfdf;
+}
+.smiText ul li:last-child {
+  border-right: 0;
+}
+.smiLogo {
+  padding: 0;
+  min-height: 71px;
+}
+.smiInfo {
+  font-family: Roboto-Medium;
+  font-size: 0.6em;
+  text-align: left;
+  padding: 10px 25px 0 25px;
+}
+footer {
+  background: #fff;
+  margin-top: 20px;
+}
+.footerText {
+  background: #222222;
+  min-height: 60px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  color: rgba(255,255,255,0.4);
+}
+.copyright {
+  font-family: GothaProReg;
+  font-size: 0.9em;
+  margin-top:21.5px;
+}
+.copyright p {
+  margin: 0;
+  padding-left: 20px;
+}
+.qr {
+  margin-top: 15px;
+}
+.qrText {
+  text-align: right;
+  padding-top: 5px;
+}
+.newsLiveSl {
+  position: relative;
+}
+.newsLiveSl img{
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+.newsLiveSl button {
+  position: absolute;
+  border: 0;
+  z-index: 2;
+  overflow: hidden;
+  width: 6px;
+  height: 8px;
+  color: rgba(0,0,0,0);
+  bottom: 15px;
+  outline: none;
+  padding: 0;
+}
+.newsLiveSl button.slick-prev {
+  background: url(../img/newslive-prev.png) no-repeat;
+  right: 70px;
+}
+.newsLiveSl button.slick-next {
+  background: url(../img/newslive-next.png) no-repeat;
+  right: 40px;
+}
+.active {
+  display: block;
+}
+.sliderNewsLive {
+  height: 270px;
+  overflow: hidden;
+}
+.sliderList {
+  left: 0;
+  position: relative;
+  transition: .3s;
+}
+#toTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+  z-index: 999;
+}
+#toTop:hover {
+  cursor: pointer;
+}
+.allNews {
+  background: #fff;
+  margin-top: 15px;
+}
+.allNews .title {
+  padding-top: 30px;
+}
+.allNews .title .textTitle {
+    font-family: Roboto-Bold;
+    font-size: 1.125em;
+    padding-top: 15px;
+}
+.allNews .tabs {
+  background: #dcdcdc;
+  padding: 0;
+}
+.allNews .tabs ul {
+  width: 100%;
+  display:table;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+.allNews .tabs ul li {
+  display: table-cell;
+  width: 20%;
+  border-right: 1px solid rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 5px 0 5px 0;
+  position: relative;
+  z-index: 2;
+}
+.allNews .tabs ul li:last-child {
+  border-right: 0;
+}
+.allNews .tabs ul li a,.allNews .tabs ul li a:hover,.allNews .tabs ul li a:focus {
+  font-family: Roboto-Medium;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9125em;
+  font-weight: bold;
+  display: block;
+}
+.allNews .act {
+  position: absolute;
+  width: 100%;
+  height:48px;
+  z-index: -1;
+  margin-top: -15px;
+}
+.allNews .tabs ul li.tabActive {
+  border: 0;
+}
+.allNews .tabs ul li.tabActive .tabActive {
+  background: #fff;
+  border: 0;
+  color:#1ea361;
+}
+.tabsInfo ul li.tabsItem {
+  display: none;
+}
+.tabsInfo ul li.tabActive {
+  display: block;
+}
+.allNews .tabs ul li.noBorder {
+  border: 0;
+}
+.tabsInfo {
+  position: relative;
+}
+.tabsList {
+  position: relative;
+  padding: 0;
+}
+ul.tabInfoList {
+  width: 100%;
+  padding: 0;
+}
+ul.tabInfoList li.tabInfoItem {
+  width: 49%;
+  height: 500px;
+  display: inline-block;
+}
+ul.tabInfoList li.tabInfoItem div {
+  text-align: center;
+}
+ul.tabInfoList li.tabInfoItem .dateAndcategory {
+  font-family: Roboto-Light;
+  font-size: 0.8em;
+}
+ul.tabInfoList li.tabInfoItem .dateAndcategory .backgroundDC {
+  background: #f2f2f2;
+  width: 458px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 25px 0 25px 20px;
+}
+ul.tabInfoList li.tabInfoItem .dateAndcategory .backgroundDC .pad {
+  padding: 0 8px;
+}
+ul.tabInfoList li.tabInfoItem .title {
+  padding: 20px 0;
+}
+ul.tabInfoList li.tabInfoItem .title h3 {
+  margin: 0;
+  font-family: Roboto-Bold;
+  font-size: 1em;
+}
+ul.tabInfoList li.tabInfoItem .text {
+  font-size: 0.9em;
+  font-family: Roboto-Light;
+  text-align: justify;
+  box-shadow:  0px 6px 5px -3px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.noPading {
+  padding: 0 !important;
+}
+.paginationTab ul {
+  float: right;
+  text-align: right;
+}
+.paginationTab ul li {
+  display: inline-block;
+  background: #efefef;
+  padding: 10px 20px 10px 20px;
+  color: #000;
+}
+.paginationTab ul li:hover {
+  background: #bdbdbd;
+  color: #fff;
+}
+.paginationTab ul li:active {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.3) inset;
+}
+.paginationTab ul a li {
+  font-size: 0.9em;
+  font-family: Roboto-Medium;
+  text-decoration: none;
+}
+ul.paginationList li.activePagination {
+  background: #fff;
+}
+.paginationTab ul a.activePagination li  {
+  color: #1ea361;
+}
+.paginationTab ul a.activePagination li:active {
+  box-shadow: none;
+}
+.newsDetails {
+  background: #fff;
+  margin-top: 20px;
+}
+.newsDetails .title {
+  padding-top: 40px;
+}
+.newsDetails .title h3 {
+  font-size: 1.25em;
+  font-family: Roboto-Medium;
+  color: #000;
+  font-weight: 500;
+  padding-left: 15px;
+  margin: 0;
+}
+.newsDetails .date {
+  font-family: Roboto-LightItalic;
+  color: #636363;
+  font-size: 0.8em;
+  padding-left: 15px;
+}
+.newsDetails .newDetailsText {
+  padding: 0 15px;
+}
+.newsDetails .newDetailsText p.grey {
+  font-family: Roboto-Medium;
+  font-size: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+.newsDetails .newDetailsText p {
+  margin-top: 0;
+  color: #000;
+  padding-right: 35px;
+  font-size: 0.9em;
+  font-family: Roboto-Light;
+  padding-top: 25px;
+  color: #444;
+}
+.newsDetails .newDetailsText img {
+  float: left;
+  padding-right: 20px;
+  max-width: 100%;
+}
+.newsDetails .newDetailsText .big72 {
+  font-size: 4.5em;
+  font-family: Roboto-Black;
+}
+.newsDetails .newDetailsText p.quote {
+  font-family: Roboto-LightItalic;
+  margin-top: 30px;
+}
+.quouteImg {
+  padding: 15px 15px 60px 50px;
+}
+.bottomColums {
+  font-family: Roboto-Light;
+  box-shadow:  0px 6px 5px -3px rgba(0,0,0,0.1);
+}
+.similarNews .title {
+  padding: 25px 0;
+  font-size: 0.9375em;
+}
+.simiLarNewsList {
+  width: 100%;
+  padding: 0
+}
+.simiLarNewsList .simiLarNewsItem {
+  float: left;
+  font-family: Roboto-Light;
+  font-size: 0.9em;
+  padding-bottom: 75px;
+  text-align: center;
+  list-style: none;
+}
+.simiLarNewsList .simiLarNewsItem p {
+  text-align: left;
+}
+.howToStart {
+  background: #fff;
+  margin-top: 20px;
+}
+.howToStart .title .textTitle h2 {
+  font-size: 1.3em;
+  font-family: Roboto-Bold;
+  color: #000;
+  margin: 35px 0;
+}
+.howToStart .forWorkMust {
+  font-family: Roboto-Medium;
+  color: #1ea361;
+  font-size: 1.2em;
+  padding-left: 45px;
+}
+.howToStart .forWorkMust p {
+  margin: 0 0 30px 0;
+}
+.howToStart .instructions .step {
+  font-size: 1.2em;
+  font-family: Roboto-Medium;
+}
+.howToStart .instructions .stepDescritpion {
+  font-family: Roboto-Light;
+  font-size: 0.9em;
+}
+.howToStart .instructions .stepDescritpion a,.howToStart .instructions .stepDescritpion a:focus,.howToStart .instructions .stepDescritpion a:hover {
+  color: #000;
+}
+.howToStart .instructions p {
+  margin: 0;
+}
+.instructions .stepRow {
+  padding: 15px;
+}
+.instructions .stepRow ul {
+  padding-left: 25px;
+  margin-top: 5px;
+}
+.howToStart .instructions .leftColumn {
+  padding-right: 0;
+}
+.howToStart .instructions .step2 {
+  background: #f2f2f2;
+  position: relative;
+}
+.howToStart .instructions .step2 .step {
+  color: #1ea361;
+}
+.howToStart .instructions .step2 .backgroundStep2 {
+  background: #f2f2f2;
+  height: 100%;
+  width:120%;
+  position: absolute;
+  margin-top: -15px;
+}
+.howToStart .instructions .phoneImg {
+  position: absolute;
+  top:-10px;
+  left: -180px;
+  z-index: 2;
+}
+.howToStart .leadership {
+  background: #ccc;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.howToStart .leadership p {
+  margin: 0;
+}
+.howToStart .leadership .useGuide {
+  color: #fff;
+  font-size: 1.1em;
+  font-family: Roboto-Medium;
+  padding-top: 25px;
+}
+.howToStart .leadership .useGuideInstruction {
+  font-family: Roboto-Light;
+  font-size: 0.8em;
+}
+.noPadding {
+  padding: 0;
+}
+.howToStart .leadership .downloadForStudent {
+  margin-top: 30px;
+}
+.howToStart .leadership .downloadForTeacher {
+  margin-top: 10px;
+  padding-bottom: 60px;
+}
+.howToStart .leadership .downloadForStudent .downloadForStudentBg,.howToStart .leadership .downloadForTeacher .downloadForTeacherBg {
+  background: #ffc107;
+  margin-left: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.howToStart .leadership .downloadForStudent a,.howToStart .leadership .downloadForStudent a:hover,.howToStart .leadership .downloadForStudent a:focus,.howToStart .leadership .downloadForTeacher .downloadForTeacherBg a, .howToStart .leadership .downloadForTeacher .downloadForTeacherBg a:hover, .howToStart .leadership .downloadForTeacher .downloadForTeacherBg a:focus {
+  color: #fff;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.howToStart .leadership .downloadForStudent .downloadForStudentBg:hover,.howToStart .leadership .downloadForTeacher .downloadForTeacherBg:hover {
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+}
+.howToStart .leadership .downloadForStudent .downloadForStudentBg:active,.howToStart .leadership .downloadForTeacher .downloadForTeacherBg:active {
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2) inset;
+}
+.howToStart .leadership .googlePlayCont {
+  padding-bottom: 60px;
+}
+.howToStart .leadership .googlePlayCont .googlePLay {
+  margin-left: 10px;
+}
+.professional .title .textTitle {
+  padding-top: 0;
+}
+.professional .title .textTitle h2 {
+  margin: 0;
+  font-size: 1.4em;
+}
+.professional .title .textTitle div{
+  display: inline-block;
+}
+.stars .starsList {
+  margin: 0;
+  padding-left: 15px;
+}
+.stars .starsList .star {
+  width: 17px;
+  height: 16px;
+  background: url(../img/starSprite.png) no-repeat;
+  background-position: 0 -17px;
+  display: inline-block;
+}
+.stars .starsList .star.starActive {
+  background-position: 0 0;
+}
+.professional .tabs {
+  margin-top: 30px;
+}
+.professional .tabs ul {
+  padding: 0;
+  width: 100%;
+  display: block;
+  background: #fff;
+}
+.professional .tabs ul li.tabsControlItem  {
+  border: 0;
+  background: #f2f2f2;
+  height: 35px;
+  margin-left: 2%;
+  width: 30%;
+  display: inline-block;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  z-index: 3;
+}
+.professional .tabs ul li.tabActive .act.tabActive {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  margin-top: -5px;
+  height: 37px;
+}
+.professional .tabs ul li a,.professional .tabs ul li a:hover,.professional .tabs ul li a:focus {
+  font-family: Roboto-Light;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto 0;
+  height: 20px;
+}
+.professional .tabs ul li.tabActive .tabActive  {
+  color: #000;
+  background: none;
+  font-family: Roboto-Medium;
+}
+.professionalInfo .tabsList {
+  border-top: 1px solid #e0e0e0;
+  margin-top: -5px;
+  margin-left: 9px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+.professionalInfo .tabsList .tabsItem {
+  margin-top: 30px;
+}
+.sliderCont {
+  overflow: hidden;
+}
+.sliderPrefessionalDescriptionWrapper {
+  padding: 0;
+  position: relative;
+}
+.sliderPrefessionalDescriptionWrapper .buttonBlock {
+  position: absolute;
+  top:50%;
+  margin-top: -10px;
+}
+.sliderPrefessionalDescriptionWrapper .buttonBlock.prev {
+  left: 0;
+}
+.sliderPrefessionalDescriptionWrapper .buttonBlock.next {
+  right: 0;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription {
+  overflow: hidden;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription .sliderPDList {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription .sliderPDItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+.sliderPortfolio {
+  float: none;
+  margin: 0 auto;
+}
+.sliderPortfolio img:not(.plus) {
+  width: 95%;
+}
+.sliderPortfolio .slick-slide {
+  position: relative;
+  outline: none;
+}
+.sliderPortfolio .slick-slide:hover .imgHover{
+  display: block;
+}
+.sliderPortfolio .imgHover {
+  width: 95%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+.sliderPortfolio .imgHover img.plus {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.sliderPortfolio .slick-prev,.sliderPortfolio .slick-next,.sliderPortfolio .slick-prev:focus,.sliderPortfolio .slick-next:focus {
+  border: 0;
+  width: 12px;
+  height: 20px;
+  overflow: hidden;
+  color: rgba(255,255,255,0);
+  outline: none;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  margin: auto 0;
+}
+.sliderPortfolio .slick-prev {
+  left:-12px;
+}
+.sliderPortfolio .slick-prev {
+  background: url("../img/sliderPD-prev.jpg") no-repeat;
+}
+.sliderPortfolio .slick-next {
+  background: url("../img/sliderPD-next.jpg") no-repeat;
+  right: -5px;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription .sliderPDItem img {
+  width: 100%;
+  display: block;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription .sliderPDItem.PDactive {
+  position: relative;
+  z-index: 1;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPrefessionalDescription .sliderPDItem.PDinslide {
+  z-index: 2;
+}
+.sliderPrefessionalDescriptionWrapper .sliderPD-button img{
+  z-index: 3;
+  position: relative;
+}
+.professional {
+  font-family: Roboto-Light;
+}
+.medium {
+  font-family: Roboto-Medium;
+}
+.professional .tabDesription .catCDE li {
+  list-style: disc;
+}
+.professional .tabDesription .catCDE li.medium {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.lightItalic {
+    font-family: Roboto-LightItalic;
+}
+.professional .tabDesription .medium.marg {
+  margin-left: 40px;
+}
+.professional .infoOfDrivingSchool a {
+  color: #1ea361;
+}
+.professional .infoOfDrivingSchool a:hover {
+  text-decoration: underline;
+}
+.professional .infoOfDrivingSchool .title {
+  font-size: 1.2em;
+}
+.professional .infoOfDrivingSchool .margImg {
+  padding-right:15px;
+  margin-top: -4px;
+}
+.professional .infoOfDrivingSchool .margLink {
+  margin-left: 30px;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0;
+}
+.professional .infoOfDrivingSchool p {
+  margin-bottom: 20px;
+}
+
+.professional .infoOfDrivingSchool .row {
+  margin-bottom: 20px;
+}
+.professional .infoOfDrivingSchool p.icon_soc img {
+  margin-right: 12px;
+}
+.professional .infoOfTraining {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+.professional .infoOfTraining td {
+  padding: 25px;
+}
+.professional .infoOfTraining tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+.professional .infoOfTraining tr:first-child {
+  border-bottom: 1px solid #000;
+}
+.professional .infoOfTraining tr td:nth-child(2n+1) {
+  background: #f7f7f7;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock.noBorder {border: 0;}
+.reviews .reviewsText {
+  margin-left: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .imgBlock {
+  width: 30px;
+  height: 30px;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .imgBlock {
+  display: inline-block;
+  margin-top: 14px;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .imgBlock:first-child {
+  margin-left: 28px;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .facebook,.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .vk,.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .ok {
+  text-decoration: none;
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .facebook .imgBlock {
+  background: url(../img/Facebook_big.png);
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .vk .imgBlock {
+  background: url(../img/vk_big.png);
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .ok .imgBlock {
+  background: url(../img/ok_big.png);
+}
+.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock .imgBlock:hover {
+  background-position: 0 32px;
+}
+.reviews .reviewsText .medium {
+  font-size: 1.2em;
+}
+.reviews .reviewsText p {
+  margin: 0 0 28px 0;
+}
+.reviews .reviewsText .lightItalic {
+  margin-top: -20px;
+}
+.reviews .reviewsText .fio {
+  font-size: 1em;
+}
+.reviews .reviewsText .date {
+  font-size: 0.8em;
+}
+.reviews .row {
+  margin-bottom: 30px;
+}
+.reviews div.noBorder {border: 0;}
+
+.tabMap .titleAdress {
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+.tabMap .map {
+  padding: 0 0 45px 0;
+}
+article.aboutProject {
+  background: #fff;
+  margin-top: 20px;
+}
+article.aboutProject .title h2 {
+  font-weight: 100;
+  margin: 30px 0 30px 15px;
+}
+article.aboutProject .video {
+  text-align: center;
+}
+article.aboutProject .video img {
+  display: block;
+  width: 100%;
+}
+article.aboutProject .text {
+  padding: 0 30px 130px 30px;
+  font-family: Roboto-Light;
+}
+article.aboutProject .text .quote {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+article.aboutProject .text .quote div {
+  display: inline-block;
+  padding-left: 0;
+}
+article.aboutProject .text .quote div p {
+  margin: 0;
+}
+article.aboutProject .text .quote .quotImg {
+  text-align: center;
+  padding-right: 0;
+}
+article.aboutProject .text .quote .lightItalic {
+  font-size: 1.1em;
+}
+article.aboutProject .text .quote .author {
+  text-align: right;
+  margin-top: 10px;
+}
+.answerAndQuestiens {
+  background: #fff;
+  margin-top: 20px;
+}
+.answerAndQuestiens .title h2 {
+  margin: 30px 0 20px 0;
+  font-size: 1.2em;
+}
+.answerAndQuestiens .accordion-inner {
+  display: none;
+}
+.answerAndQuestiens a.accordion-trigger ,.answerAndQuestiens  a.answerAndQuestiens:hover, a.accordion-trigger:focus{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: block;
+  padding: 15px;
+}
+.answerAndQuestiens .accordion-item {
+  margin-right: 40px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+.answerAndQuestiens .accordion-item .accordion-item-bg {
+  padding: 0;
+  background: #f7f7f7;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+}
+.answerAndQuestiens a.accordion-trigger.green {
+  color: #1ea361;
+  padding: 25px;
+}
+.answerAndQuestiens a.accordion-trigger.green img {
+  margin-left: 7px;
+}
+.answerAndQuestiens .accordion-item .accordion-inner {
+  padding: 30px 0 0 0;
+  border: 1px solid #e0e0e0;
+  margin: -16px 0 15px 0;
+}
+.answerAndQuestiens .accordion-item .accordion-inner .medium {
+  color: #707070;
+  margin-bottom: 10px;
+}
+.yellow {
+  color: #ffc107;
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=text],.answerAndQuestiens .accordion-item .accordion-inner input[type=email] {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding-left: 5px;
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=text]:focus,.answerAndQuestiens .accordion-item .accordion-inner textarea:focus, .answerAndQuestiens .accordion-item .accordion-inner input[type=email]:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=text]:focus:invalid,.answerAndQuestiens .accordion-item .accordion-inner textarea:focus:invalid,.answerAndQuestiens .accordion-item .accordion-inner input[type=email]:focus:invalid {
+  border-color: red;
+  box-shadow: 0 2px 10px 1px rgba(226,21,21,0.2)
+}
+.answerAndQuestiens .accordion-item .accordion-inner textarea {
+  resize: none;
+  height: 120px;
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px;
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=submit] {
+  float: right;
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=submit]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.answerAndQuestiens .accordion-item .accordion-inner input[type=submit]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.answerAndQuestiens .accordion-item .accordion-inner .button {
+  margin: 20px 0 35px 0;
+  position: relative;
+}
+.answerAndQuestiens .accordion-item .accordion-inner .button .yell {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  font-family: Roboto-Light;
+}
+.light {
+  font-family: Roboto-Light;
+}
+.answerAndQuestiens .accordion-item .light {
+  color: #777;
+  font-size: 0.6875em;
+}
+.answerAndQuestiens .accordion-item .bubble {
+  margin-left: 30px;
+  padding: 0 45px 0 15px;
+}
+.answerAndQuestiens .accordion-item .bubble img {
+  float: left;
+  margin-right: 15px;
+}
+.answerAndQuestiens .accordion-item .bubble p {
+  margin: 0 0 30px 0;
+  font-family: Roboto-Light;
+  font-size: 0.9em;
+}
+.contacts {
+  background: #fff;
+  margin-top: 20px;
+}
+.contacts .title h2{
+  font-size: 1.3em;
+  font-family: Roboto-Bold;
+  color: #000;
+  margin: 35px 0 20px 0;
+}
+.contacts .map {
+  position: relative;
+  padding: 0;
+  margin-bottom: 45px;
+}
+.contacts .map .feedback {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 30px 100px;
+  color: #fff;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.9);
+  border: 1px solid rgba(0,0,0,0.14);
+}
+.contacts .map .feedback .left {
+  padding-bottom: 15px;
+}
+.contacts .map .feedback .left div {
+  font-size: 0.9em;
+  padding: 5px 0;
+}
+.contacts .map .feedback .left .title,.contacts .map .feedback .right .title {
+    font-family: Roboto-Black;
+    font-size: 1.1em;
+    padding: 0 0 35px 0;
+}
+.contacts .map .feedback .right .title  {
+  padding-bottom: 15px;
+}
+.contacts .map .feedback .left img {
+  margin-right: 10px;
+}
+.contacts .map .feedback .right div {
+  padding-left: 0;
+}
+.contacts .map .feedback .right .medium{
+  font-size: 0.7em;
+}
+.contacts .map .feedback .right input[type=text],.contacts .map .feedback .right input[type=email],.contacts .map .feedback .right textarea {
+  border: 1px solid #000;
+  background: #b7b6b3;
+  color: #000;
+  width: 100%;
+  font-size: 1em;
+  font-family: Roboto-Light;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.contacts .map .feedback .right input[type=text]:focus,.contacts .map .feedback .right input[type=email]:focus, .contacts .map .feedback .right textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.contacts .map .feedback .right input[type=text]:focus:invalid,.contacts .map .feedback .right input[type=email]:focus:invalid, .contacts .map .feedback .right textarea:focus:invalid {
+  border-color: red;
+  box-shadow: 0 2px 10px 1px rgba(226,21,21,0.2)
+}
+.contacts .map .feedback .right textarea {
+  resize: none;
+  height: 90px;
+}
+.contacts .map .feedback .right .button {
+  position: relative;
+}
+.contacts .map .feedback .right input[type=submit] {
+  float: right;
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 9px;
+  font-family: Roboto-Bold;
+  font-size: 0.9em;
+}
+.contacts .map .feedback .right input[type=submit]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.contacts .map .feedback .right input[type=submit]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.contacts .map .feedback .right .yell {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-family: Roboto-Light;
+  font-size: 0.7em;
+}
+.contacts .map .feedback .right .button div {
+  padding: 0;
+}
+.cabinet .exit a {
+  color: #1ea361;
+  font-size: 0.8em;
+}
+.cabinet .exit a:hover,.cabinetStudent .nameAndSettings .persSettings a:hover {
+  text-decoration: underline;
+}
+.cabinet .exit {
+  text-align: right;
+  padding: 65px 25px 25px 0 ;
+}
+.cabinetStudent {
+  background: #fff;
+  margin-top: 20px;
+}
+.cabinetStudent .nameAndSettings {
+  padding: 30px;
+
+}
+.cabinetStudent .nameAndSettings .userName {
+  font-size: 1.2em;
+}
+.cabinetStudent .nameAndSettings .persSettings {
+  text-align: right;
+  padding-right: 0;
+}
+.cabinetStudent .nameAndSettings .persSettings a {
+  color: #1ea361;
+}
+.cabinetStudent .nameAndSettings .persSettings a:hover {
+  text-decoration: underline;
+}
+.cabinetStudent .nameAndSettings .persSettings img {
+  margin-right: 5px;
+}
+.cabinetStudent .dataDrivingSchool {
+  padding-left: 60px;
+  font-size: 1em;
+  padding-bottom: 35px;
+}
+.cabinetStudent .dataDrivingSchool .nameDrivingSchool,.cabinetStudent .dataDrivingSchool .code,.cabinetStudent .dataDrivingSchool .date {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 5px 0 2px 0;
+
+}
+.cabinetStudent .dataDrivingSchool .bold {
+  font-size: 1.2em;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 2px 0;
+}
+.bold {
+  font-family: Roboto-Bold;
+}
+.cabinetStudent .dataDrivingSchool .info {
+  border-bottom: 5px solid #f2f2f2;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.cabinetStudent .dataDrivingSchool .complete {
+  font-size: 1.2em;
+  text-align: right;
+  padding-right: 45px;
+}
+.cabinetStudent .dataDrivingSchool .number {
+  font-size: 1.3em;
+}
+.cabinetStudent .dataDrivingSchool .completed,.cabinetStudent .dataDrivingSchool .leftCompleted {
+  padding-bottom: 10px;
+}
+.cabinetStudent .dataDrivingSchool .leftCompleted .complete {
+  text-align: left;
+}
+.cabinetStudent .dataDrivingSchool .car {
+  text-align: center;
+  padding-top: 10px;
+}
+.cabinetStudent .dataDrivingSchool .car img {
+  max-width: 100%;
+}
+.cabinetStudent .tableStatus {
+  padding: 0 45px;
+  margin-bottom: 35px;
+}
+.cabinetStudent .tableStatus .title {
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+.cabinetStudent .tableStatus img.map {
+  width: 100%;
+  display: block;
+}
+.cabinetStudent .tableStatus table {
+  width: 100%;
+  font-family: Roboto-Medium;
+  font-size: 1.1em;
+}
+.cabinetStudent .tableStatus table tr.titleTable {
+  background: #666;
+  font-size: 1.2em;
+  color: #fff;
+}
+.cabinetStudent .tableStatus table tr td {
+  padding: 10px;
+}
+.cabinetStudent .tableStatus table tr td:nth-child(2) {
+  max-width: 450px;
+}
+.cabinetStudent .tableStatus table tr.titleTable td {
+  padding: 15px 0 15px 10px;
+}
+.cabinetStudent .tableStatus table tr td.number {
+  font-family: Roboto-Bold;
+}
+.cabinetStudent .tableStatus table tr.click:hover {
+  cursor: pointer;
+  background: #ffc720;
+  color: #fff;
+}
+.cabinetStudent .tableStatus table tr.click.click-item-active {
+  background: #ffc720;
+  color: #fff;
+}
+.cabinetStudent .tableStatus table tr.click.click-item-active td {
+  padding: 15px 10px;
+}
+.cabinetStudent .tableStatus table tr.click-item {
+  text-align: center;
+  display: none;
+}
+.cabinetStudent .tableStatus table tr.click-item td {
+  padding: 0;
+  position: relative;
+}
+.cabinetStudent .tableStatus table .infoExercise, .watchExercise .descriptionEx .map .infoExercise {
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.9);
+  border: 1px solid rgba(0,0,0,0.14);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px 15px 10px 65px;
+}
+.cabinetStudent .tableStatus table .infoExercise .goToDesriptionOfExersice {
+  text-align: left;
+
+}
+.cabinetStudent .tableStatus table .infoExercise a, .watchExercise .descriptionEx .map a {
+  font-family: Roboto-Light;
+  color: #cececd;
+  font-size: 0.9em;
+}
+.cabinetStudent .tableStatus table .infoExercise a:hover,  .watchExercise .descriptionEx .map a:hover {
+  text-decoration: underline;
+}
+.cabinetStudent .tableStatus table .infoExercise .imgBlock {
+  width: 17px;
+  height: 17px;
+  margin-top:3px;
+}
+.cabinetStudent .tableStatus table .infoExercise .facebook .imgBlock {
+  background: url(../img/Facebook_white.png);
+}
+.cabinetStudent .tableStatus table .infoExercise .vk .imgBlock {
+  background: url(../img/vk_white.png);
+}
+.cabinetStudent .tableStatus table .infoExercise .ok .imgBlock {
+  background: url(../img/ok_white.png);
+}
+.cabinetStudent .tableStatus table .infoExercise .imgBlock:hover {
+  background-position: 0 18px;
+}
+.cabinetStudent .tableStatus table .share {
+  text-align: center;
+}
+.cabinetStudent .tableStatus table .share .shareText {
+  text-align: right;
+}
+/*модальное окно*/
+/* Базовые стили слоя затемнения и модального окна  */
+.settings-overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+/* фон затемнения */
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed; /* фиксированное поцизионирование */
+    cursor: default; /* тип курсара */
+}
+/* активируем слой затемнения */
+.settings-overlay:target {
+    display: block;
+}
+/* стили модального окна */
+.settings-popup {
+  position: fixed;
+  z-index: 11;
+  background: #fff;
+  color: #000;
+  width: 40%;
+  left:50%;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  -moz-transition: -moz-transform 0.6s ease-out;
+  -o-transition: -o-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+  opacity: 0;
+}
+/* активируем модальный блок */
+.settings-overlay:target+.settings-popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
+    top:20%;
+    position: fixed;
+    max-width: 526px;
+    opacity: 1;
+}
+.settings-popup .title {
+  background: #000;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 8.5px 15px;
+}
+.settings-popup .title .pencil {
+  text-align: right;
+}
+.settings-popup .form {
+  color: #000;
+  padding: 10px 15px;
+  font-size: 0.9em;
+}
+.settings-popup .form .right {
+  font-family: Roboto-Light;
+}
+.settings-popup .form .left {
+  padding: 3px 15px;
+  margin-top: 20px;
+}
+.settings-popup .form .right input:not([type="radio"]) {
+  padding: 2px 10px;
+  border: 1px solid #000;
+  width: 90%;
+  margin-top: 20px;
+}
+.settings-popup .form .right input:not([type="radio"]):focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+  outline: none;
+}
+.settings-popup .form .right input:not([type="radio"]):focus:invalid {
+  border-color: red;
+  box-shadow: 0 2px 10px 1px rgba(226,21,21,0.2)
+}
+.settings-popup .form .right input[type=radio] {
+  display: none;
+}
+.settings-popup .form .right input[type=radio] + label .radio {
+  border: 1px solid #000;
+  margin-top: 28px;
+  display: inline-block;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.settings-popup .form .right input[type=radio]:checked + label .radio {
+  background: #000;
+}
+.settings-popup .form .right .sex {
+  padding-left: 10px;
+  padding-right:20px;
+}
+.settings-popup .form .right.pad {
+  padding-bottom: 5px;
+}
+.settings-popup .form .left.nopadr {
+  padding-right: 0;
+  line-height: 13px;
+}
+.settings-popup .form .left .little {
+  font-size: 0.85em;
+}
+
+.settings-popup .form .obligatory {
+  font-size: .7em;
+  text-align: right;
+  padding-right: 30px;
+  margin-top: 15px;
+}
+.settings-popup .form .saveOrClose {
+  margin: 30px 0;
+}
+.settings-popup .form .saveOrClose .pad {
+  padding: 6.5px 15px;
+}
+.settings-popup .form .saveOrClose .close,.settings-popup .form .saveOrClose .save {
+  padding: 5px 15px;
+  color: #fff;
+  background: #b2b2b2;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.9em;
+  position: relative;
+}
+.settings-popup .form .saveOrClose .close:hover,.settings-popup .form .saveOrClose .save:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.settings-popup .form .saveOrClose .close:focus,.settings-popup .form .saveOrClose .save:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+}
+.settings-popup .form .saveOrClose .save {
+  border: 0;
+  background: #1ea361;
+  float: right;
+  margin-right: 15px;
+}
+
+.settings-popup .form .wrapper-dropdown {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 20px;
+    color: #9e9e9e;
+}
+.settings-popup .form .wrapper-dropdown.active {
+    box-shadow: 0 0 15px 1px #e5e5e5;
+}
+.settings-popup .form .wrapper-dropdown span {
+  padding: 3px 10px;
+  border: 1px solid #000;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+.settings-popup .form .wrapper-dropdown:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 23px;
+    right: 1px;
+    top: 50%;
+    margin-top: -11px;
+    background: #f2f2f2 url(../img/arrowDown.jpg);
+    font-family: gothamThin;
+    font-size: 1.6em;
+    color: #000;
+    font-weight: bold;
+}
+.settings-popup .form .wrapper-dropdown .dropdown {
+    position: relative;
+    left: 0;
+    right: 0;
+    background: #fff;
+    font-weight: normal;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 0;
+    border-top: 0;
+    z-index: 10;
+    padding-left: 0;
+    display: none;
+    margin-bottom: 0;
+    box-shadow: 0 0 15px 1px #e5e5e5;
+}
+.settings-popup .form .wrapper-dropdown .dropdown li {
+  list-style: none;
+  padding: 4px 0;
+  position: relative;
+}
+.settings-popup .form .wrapper-dropdown .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #9e9e9e;
+    padding: 0 10px;
+}
+.settings-popup .form .wrapper-dropdown .dropdown li:hover {
+    background: rgba(0,0,0,0.1);
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: -2px;
+}
+.settings-popup .form .wrapper-dropdown.active .dropdown {
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+    border: 1px solid #ccc;
+    position: absolute;
+}
+
+.settings-popup .form .wrapper-dropdown.active:after {
+  transform: rotate(180deg);
+  top:12px;
+  right: 1px;
+}
+.watchExercise {
+  background: #fff;
+  margin-top: 20px;
+}
+.watchExercise .title h2 {
+  padding: 35px 30px;
+  margin: 0;
+  font-family: Roboto-Bold;
+  font-size: 1.3em;
+}
+.watchExercise .descriptionEx  {
+  padding: 0 45px;
+  font-size: 1.1em;
+}
+.watchExercise .descriptionEx .top {
+  font-family: Roboto-Bold;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.watchExercise .descriptionEx .bottom {
+  margin-bottom: 30px;
+}
+.watchExercise .descriptionEx table {
+  margin-bottom: 40px;
+}
+.watchExercise .descriptionEx table tr td:nth-child(1) {
+  font-size: 1em;
+  background: #f4f4f4;
+  width: 30%;
+}
+.watchExercise .descriptionEx table tr {
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+}
+.watchExercise .descriptionEx table tr:nth-child(1) {
+  border-bottom: 1px solid #000;
+}
+.watchExercise .descriptionEx table tr td:nth-child(2) {
+  font-size: 1em;
+  font-family: Roboto-Light;
+}
+.watchExercise .descriptionEx table tr:nth-child(1) td:nth-child(2),.watchExercise .descriptionEx table tr td.green {
+  font-size: 1.05em;
+  font-family: Roboto-Medium;
+}
+.watchExercise .descriptionEx table tr td {
+  padding: 15px 25px;
+}
+.watchExercise .descriptionEx .map .mapTitle {
+  font-family: Roboto-Bold;
+  font-size: 1.2em;
+  padding-left: 0;
+}
+.watchExercise .descriptionEx .map img.map {
+  display: block;
+  width: 100%;
+}
+.watchExercise .descriptionEx .map .noPad {
+  padding: 0;
+}
+.watchExercise .descriptionEx .map .share .shareText {
+  text-align: right;
+}
+.watchExercise .descriptionEx .map .share .imgBlock {
+  width: 17px;
+  height: 17px;
+  margin: 3px auto;
+}
+.watchExercise .descriptionEx .map .share .Facebook_white .imgBlock {
+  background: url(../img/Facebook_white.png);
+}
+.watchExercise .descriptionEx .map .share .vk_white .imgBlock {
+  background: url(../img/vk_white.png);
+}
+.watchExercise .descriptionEx .map .share .ok_white .imgBlock {
+  background: url(../img/ok_white.png);
+}
+
+.watchExercise .descriptionEx .map .share .imgBlock:hover {
+  background-position: 0 18px;
+}
+.cabinetTeacher .nameAndSettings .hello {
+  display: inline-block;
+}
+.cabinetTeacher .nameAndSettings .changePassword {
+  text-decoration: none;
+  color: #fff;
+  background: #ffc107;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 3px 7px;
+  font-size: 0.7em;
+  border-radius: 5px;
+}
+.cabinetTeacher .nameAndSettings .changePassword:hover {
+  box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+}
+.cabinetTeacher .nameAndSettings .changePassword:focus {
+  box-shadow: 0 0px 6px 1px rgba(0,0,0,0.2) inset;
+}
+.cabinetTeacher .dataDrivingSchool .bold {
+  font-family: Roboto-Medium;
+  font-size: 1.05em;
+  padding: 5px 0 2px 0;
+}
+.cabinetTeacher .dataDrivingSchool .goToCode {
+  text-align: right;
+  padding-top: 20px;
+}
+.cabinetTeacher .dataDrivingSchool .goToCode a,.cabinetTeacher .dataDrivingSchool .goToComment a {
+  color: #1ea361;
+}
+.cabinetTeacher .dataDrivingSchool .goToCode a:hover,.cabinetTeacher .dataDrivingSchool .goToComment a:hover {
+  text-decoration: underline;
+}
+.cabinetTeacher .dataDrivingSchool .goToComment {
+  padding-top: 20px;
+  padding-left: 0;
+}
+.cabinetTeacher .dataDrivingSchool .milage {
+  font-size: 1.3em;
+  margin-top: 80px;
+}
+.cabinetTeacher .dataDrivingSchool .milage .medium {
+  padding: 0 100px;
+}
+.cabinetTeacher .dataDrivingSchool .milage .medium .row {
+  padding: 10px 0;
+}
+.cabinetTeacher .dataDrivingSchool .milage .underline {
+  border-bottom: 1px solid #dfdfdf;
+}
+.cabinetTeacher .dataDrivingSchool .infoSteps {
+  margin-top: 93px;
+  padding-bottom: 10px;
+}
+.cabinetTeacher .dataDrivingSchool .milage .green {
+  text-align: right;
+  padding-right: 30px;
+}
+.cabinetTeacher .dataDrivingSchool .milage input {
+  width: 110px;
+  padding: 2px 8px;
+  font-family: Roboto-Light;
+  margin: 0 10px;
+}
+.cabinetTeacher .dataDrivingSchool .milage input:focus {
+  outline: none;
+}
+.cabinetTeacher .dataDrivingSchool .milage a {
+  color: #fff;
+  background: #1ea361;
+  font-size: 0.8em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.cabinetTeacher .dataDrivingSchool .milage a:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.cabinetTeacher .dataDrivingSchool .milage a:focus {
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.2) inset;
+}
+.cabinetTeacher .dataDrivingSchool .milage .sinceFor {
+  display: inline-block;
+  margin-top: 10px;
+}
+.cabinetTeacher .dataDrivingSchool .rating {
+  padding-right: 75px;
+  border: 0;
+  margin-bottom: 20px;
+}
+.cabinetTeacher .dataDrivingSchool .bold {
+  font-size: 1.1em;
+}
+.cabinetTeacher .dataDrivingSchool .rating img {
+  position: relative;
+  top:-5px;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS {
+  margin-bottom: 30px;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS .mastersMTSTitle {
+  font-size: 1.2em;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS .padr {
+  padding-right: 75px;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table {
+  font-family: Roboto-Light;
+  width: 100%;
+  text-align: center;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table tr:nth-child(1) {
+  border-bottom: 1px solid #000;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table tr td {
+  padding: 15px 20px;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table tr td:nth-child(2n+1) {
+  background: #f4f4f4;
+}
+.cabinetTeacher .dataDrivingSchool .mastersMTS table tr td.phone {
+  width: 15%;
+}
+.drivingSchool .map {
+  padding: 25px 30px;
+}
+.drivingSchool .map img {
+  display: block;
+  width: 100%;
+}
+.drivingSchool .sort {
+  padding: 0 30px;
+}
+.drivingSchool .sort .textCost {
+  display: inline-block;
+  font-size: 1.1em;
+  position: absolute;
+  top:2px;
+}
+.drivingSchool .sort .wrapper-dropdown-cost, .drivingSchool .sort .wrapper-dropdown-rating {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    width: 152px;
+    color: #9e9e9e;
+    display: inline-block;
+    margin-left: 50px;
+}
+.drivingSchool .sort .wrapper-dropdown-cost.active,.drivingSchool .sort .wrapper-dropdown-rating.active {
+  box-shadow: 0 0 15px 1px #e5e5e5;
+}
+.drivingSchool .sort .wrapper-dropdown-cost span, .drivingSchool .sort .wrapper-dropdown-rating span {
+  display: block;
+    border: 1px solid #000;
+    padding: 3px 10px;
+    position: relative;
+    z-index: 12;
+}
+.drivingSchool .sort .wrapper-dropdown-rating {
+    margin-left: 70px;
+}
+.drivingSchool .sort .wrapper-dropdown-cost:after, .drivingSchool .sort .wrapper-dropdown-rating:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 27px;
+    right: 0px;
+    top: 50%;
+    margin-top: -13px;
+    background: #f2f2f2 url(../img/arrowSelect.jpg);
+    color: #c0c0c0;
+}
+.drivingSchool .wrapper-dropdown-cost .dropdown,.drivingSchool .wrapper-dropdown-rating .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    font-weight: normal;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 0;
+    border-top: 0;
+    z-index: 10;
+    padding-left: 0;
+    display: none;
+    margin-bottom: 0;
+    box-shadow: 0 0 15px 1px #e5e5e5;
+}
+.drivingSchool .wrapper-dropdown-cost .dropdown li,.drivingSchool .wrapper-dropdown-rating .dropdown li  {
+  list-style: none;
+}
+.drivingSchool .wrapper-dropdown-cost .dropdown li a,.drivingSchool .wrapper-dropdown-rating .dropdown li a  {
+    display: block;
+    text-decoration: none;
+    color: #9e9e9e;
+    padding: 5px 10px
+}
+
+.drivingSchool .sort .wrapper-dropdown-cost .dropdown li:hover a,.drivingSchool .sort .wrapper-dropdown-rating .dropdown li:hover a {
+    background: rgba(0,0,0,0.1);
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: -2px;
+}
+.drivingSchool .sort .wrapper-dropdown-cost.active .dropdown,.drivingSchool .sort .wrapper-dropdown-rating.active .dropdown {
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+    border: 1px solid #ccc;
+    z-index: 20;
+}
+
+.drivingSchool .sort .wrapper-dropdown-cost.active:after,.drivingSchool .sort .wrapper-dropdown-rating.active:after  {
+  transform: rotate(180deg);
+  z-index: 11;
+  top:12px;
+    margin-top: -12px;
+}
+.drivingSchool .listOfDrivingSchool {
+  padding: 25px 45px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner {
+  border: 3px solid #1ea361;
+  height: 100%;
+  padding-right: 0;
+  margin-bottom: 15px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left {
+  padding: 25px 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .ooo {
+  font-size: 1.1em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .profi {
+  margin-top: -5px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .bold {
+  font-size: 1.6em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .liststars {
+  padding: 0;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .liststars li {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url(../img/starSprite.png) no-repeat;
+  background-position: 0 -17px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .liststars li.activeStar {
+  background-position: 0 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left .reviews {
+  display: inline-block;
+  font-size: 0.8em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center {
+  padding: 50px 0 25px 0
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center .link {
+  margin-top: 5px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center a {
+  color: #000;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center a:hover {
+  text-decoration: underline;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center .adress {
+  font-size: 1.05em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center .phones {
+  margin-top: 15px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right {
+  padding: 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .listImg {
+  margin-bottom: 30px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend {
+  background: #1ea361;
+  padding: 5px 0 5px 10px;
+  color: #fff;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend div {
+  display: inline-block;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend img {
+  margin: -12px 5px 0 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend .drivecontrol, .drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend .avarage {
+  line-height: 12px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend {
+  font-size: 0.9em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.noRecomend .right .recomend {
+  height: 44px;
+  background: #fff;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.noRecomend .right {
+  margin: 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.noRecomend .right .recomend div {
+  display: none;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend .drivecontrol .DC {
+  font-family: Plantagenet Cherokee;
+  font-size: 1.2em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend .avarage {
+  margin-left: 15px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend .big {
+  font-size: 1.9em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .cost {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .cost div {
+  display: inline-block;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .cost .marg {
+  position: absolute;
+  top:0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .cost .learning {
+  margin-left: 25px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .listImg {
+  margin-top: 20px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .listImg img {
+  margin-right: 25px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini.miniPadR {
+  border: 0;
+  padding-left: 0;
+  padding-right: 15px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini.miniPadL {
+  padding-left: 15px;
+  padding-right:0;
+  border: 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .listOfDrivingSchoolInnerBorder {
+  border: 2px solid #adadad;
+  padding: 30px 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .left {
+  padding: 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .left .link {
+  margin-top: 5px;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .left a {
+  color: #000;
+  text-decoration: underline;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .left a:hover {
+  text-decoration: none;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .center {
+  padding:25px 0 0 0;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .center .morePhones .buttonPhonesHidden {
+  color: #1ea361;
+  font-size: 0.8em;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .center .morePhones .buttonPhonesHidden.buttonHidden {
+  display: none;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .center .morePhones .phonesHidden {
+  display: none;
+}
+.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner.mini .center .morePhones .phonesHidden.activeHiddenPhones {
+  display: block;
+}
+.cabinetTeacherReviews {
+  margin-top: 20px;
+  background: #fff;
+}
+.cabinetTeacherReviews .title h2 {
+  font-size: 1.3em;
+  font-family: Roboto-Bold;
+  color: #000;
+  margin: 35px 0;
+}
+.cabinetTeacherReviews .textReview {
+  font-family: Roboto-Light;
+  padding: 0 30px;
+}
+.cabinetTeacherReviews .textReview .medium {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+.cabinetTeacherReviews .textReview  p {
+  margin: 0;
+}
+.cabinetTeacherReviews .textReview .author {
+    font-family: Roboto-LightItalic;
+    font-size: 0.9em;
+}
+.cabinetTeacherReviews .answer {
+  padding: 20px 35px 15px 35px;
+}
+.cabinetTeacherReviews .answer .medium {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+.cabinetTeacherReviews .answer textarea {
+  resize: none;
+  height: 60px;
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cabinetTeacherReviews .answer textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.cabinetTeacherReviews .answer input[type=submit] {
+  float: right;
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+.cabinetTeacherReviews .answer input[type=submit]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.cabinetTeacherReviews .answer input[type=submit]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.cabinetTeacherReviews .review {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 35px;
+}
+.cabinetTeacherReviews .review:last-child {
+  border-bottom: 0;
+}
+.cabinetTeacherCode {
+  margin-top: 20px;
+  background: #fff;
+}
+.cabinetTeacherCode .title {
+  padding: 0 25px;
+}
+.cabinetTeacherCode .title h2 {
+  font-size: 1.3em;
+  font-family: Roboto-Bold;
+  color: #000;
+  margin: 35px 0;
+}
+.cabinetTeacherCode .tblCodes {
+  padding: 0 25px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.cabinetTeacherCode .codes {
+  font-family: Roboto-Light;
+  width: 90%;
+  margin: 0 auto;
+}
+.cabinetTeacherCode .codes tr td:nth-child(2n+1) {
+  background: #f4f4f4;
+}
+.cabinetTeacherCode .codes tr {
+  border-bottom:1px solid #e0e0e0;
+}
+.cabinetTeacherCode .codes tr td {
+  padding: 15px 10px;
+}
+.cabinetTeacherCode .codes tr.medium td {
+  padding: 15px 5px 25px 5px;
+  font-size: 1.05em;
+}
+.cabinetTeacherCode .codes tr.medium {
+  border-bottom: 1px solid #000;
+  border-top:1px solid #e0e0e0;
+}
+
+.drivingSchoolAll .tabs ul li.tabsControlItem {
+  width: 18%;
+  margin-left: 1%;
+}
+.drivingSchoolAll .title {
+  padding-top: 0;
+}
+.drivingSchoolAllInfo .tabOverall .downloadLogoText {
+  font-size: 1.1em;
+}
+.drivingSchoolAllInfo .tabOverall .form {
+  margin: 20px 0 15px 0
+}
+.drivingSchoolAllInfo .tabOverall input[type=submit] {
+  display: inline-block;
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 8px;
+  margin-left: 5px;
+}
+.drivingSchoolAllInfo .tabOverall input[type=submit]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .tabOverall input[type=submit]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.drivingSchoolAllInfo .tabOverall input[type=text] {
+  width: 60%;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding-left: 5px;
+  padding: 4px 8px;
+  font-family: Roboto-Light;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .tabOverall input[type=text]:disabled {
+  background:#fff;
+}
+.drivingSchoolAllInfo .tabOverall input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .tabOverall .restrictions {
+  font-family: Roboto-Light;
+  font-size: 0.75em;
+}
+.drivingSchoolAllInfo .tabOverall .restrictions p {
+  margin: 0;
+}
+.drivingSchoolAllInfo .tabOverall .imgY {
+  margin: 35px 0 15px 0;
+}
+.drivingSchoolAllInfo .tabOverall .chooseCatTextDescr {
+  font-family: Roboto-Light;
+  font-size: 0.9em;
+}
+.drivingSchoolAllInfo .tabOverall .chooseCatTextDescr p {
+  margin-bottom: 0;
+}
+.drivingSchoolAllInfo .tabOverall input[type=submit].choose {
+  padding: 5px 16px;
+}
+.drivingSchoolAllInfo .tabOverall .tblMasters .masters {
+  width: 100%;
+  text-align: center;
+  font-family: Roboto-Light;
+  min-width: 900px;
+}
+.drivingSchoolAllInfo .tabOverall .tblMasters .masters tr.medium {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    font-size: 1.05em;
+}
+.drivingSchoolAllInfo .tabOverall .tblMasters .masters tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+.drivingSchoolAllInfo .tabOverall .tblMasters .masters tr td {
+  padding: 15px;
+}
+.drivingSchoolAllInfo .tabOverall .tblMasters .masters tr td:nth-child(2n+1) {
+    background: #f4f4f4;
+}
+.drivingSchoolAllInfo  img {
+  max-width: 100%;
+}
+.drivingSchoolAllInfo .tabOverall .masterTitle {
+  margin: 40px 0 25px 0;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .tabOverall .add {
+  display: inline-block;
+  background: #ffc107;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 14px;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+.drivingSchoolAllInfo .tabOverall .add:hover,.drivingSchoolAllInfo .contactsDrivingSchool .timeWork:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .tabOverall .add:focus,.drivingSchoolAllInfo .contactsDrivingSchool .timeWork:focus {
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.2) inset;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool {
+  padding: 0 45px;
+  font-family: Roboto-Light;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .titleContactDrivingSchool {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type=text],.drivingSchoolAllInfo .contactsDrivingSchool input[type=email] {
+  border-radius: 3px;
+  border: 1px solid #000;
+  margin: 0 15px 0 0;
+  padding: 4px 8px;
+  font-family: Roboto-Light;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type=text]:disabled {
+  background:#fff;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type=text]:focus,.drivingSchoolAllInfo .contactsDrivingSchool input[type=email]:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput {
+  display: inline-block;
+  margin-top: 3px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .pointOnMap {
+  font-size: 0.75em;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .timeWork {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #ffc107;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .timeWorkInfo {
+  margin-bottom: 15px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool  .grey {
+  color: #8a8a8a;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .line {
+  border-top: 1px solid #e0e0e0;
+  padding: 8px 0;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .plus {
+  text-decoration: none;
+  color: #1ea361;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .plus img {
+  margin-right: 5px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .imgBlock {
+  width: 30px;
+  height: 30px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .vk, .drivingSchoolAllInfo .contactsDrivingSchool .nameInput .ok,.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .facebook {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .facebook .imgBlock {
+  background: url(../img/Facebook_big.png);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .vk .imgBlock {
+  background: url(../img/vk_big.png);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .ok .imgBlock {
+  background: url(../img/ok_big.png);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .nameInput .imgBlock:hover {
+  background-position: 0 32px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .choseLinkMargB .choseLink {
+  font-size: 0.8em;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool .choseLinkMargB {
+  margin-bottom: 10px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool textarea {
+  resize: none;
+  height: 125px;
+  border: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type="submit"] {
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  font-family: Roboto-Medium;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 5px 25px;
+  float: right;
+  margin-right: 60px;
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type="submit"]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .contactsDrivingSchool input[type="submit"]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.settings-graficWorkTime .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.settings-graficWorkTime .form {
+  padding: 15px 45px 0 45px;
+}
+.settings-graficWorkTime .form .checkBoxBg {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.settings-graficWorkTime .form .checkText {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.05em;
+}
+.settings-graficWorkTime  .timeFromTo {
+  display: inline-block;
+  padding: 0;
+}
+.settings-graficWorkTime  .timeFromTo div {
+  display: inline-block;
+}
+.settings-graficWorkTime  .checkbox + label {
+  cursor: pointer;
+}
+.settings-graficWorkTime .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.settings-graficWorkTime .checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 17px;
+}
+.settings-graficWorkTime .checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border:1px solid #c7c7c7;
+}
+.settings-graficWorkTime .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+}
+.settings-graficWorkTime .checkbox:checked + label:before {
+  background: url(../img/checkMark.png) no-repeat center;
+  border:0;
+}
+.settings-graficWorkTime input[type=text] {
+  width: 43px;
+  height: 30px;
+  font-family: Roboto-Light;
+  border: 1px solid #000;
+  text-align: center;
+}
+.settings-graficWorkTime input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.settings-graficWorkTime  .timeFromTo .from {
+  margin-right: 15px;
+}
+.settings-graficWorkTime  .timeFromTo .to {
+  margin: 0 15px 0 25px;
+}
+.settings-graficWorkTime .form .checkText:not(.green),.settings-graficWorkTime .form .checkBoxBg:not(.green) {
+  margin-top: 5px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription {
+    padding: 0 45px;
+    font-family: Roboto-Light;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortDescription {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea  {
+  margin-bottom: 35px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel {
+  background: #efefef;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .text {
+  padding: 0;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .text textarea {
+  resize: none;
+  height: 125px;
+  border: 1px solid #000;
+  border-top: 0;
+  padding: 5px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .text textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .fontStyle a.letterU img {
+  margin-top: 3px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel a {
+  display: inline-block;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .fontStyle a {
+  margin: 0 10px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .textAlign a,.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .lists a,.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .indents a,.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .linksAdd a {
+  margin: 0 5px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .noPad {padding: 0;}
+.shortTextArea {
+  padding: 0 30px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save {
+  margin-top: 15px
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save input[type="submit"] {
+    background: #1ea361;
+    border: 0;
+    color: #fff;
+    font-family: Roboto-Medium;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 3px 10px;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save input[type="submit"]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save input[type="submit"]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save .little {
+  text-decoration: none;
+  color: rgba(0,0,0,0.7);
+  margin-left: 30px;
+  font-size: 0.85em;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save .little:hover {
+  text-decoration: underline;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save div {
+  display: inline-block;
+}
+.drivingSchoolAllInfo .drivingSchoolDescription .overallTextArea .text textarea {
+  height: 380px;
+}
+.drivingSchoolAllInfo .costOnService .tblCosts .costs {
+  width: 100%;
+  text-align: center;
+  font-family: Roboto-Light;
+  min-width: 900px;
+}
+.drivingSchoolAllInfo .costOnService .tblCosts .costs tr.medium {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #e0e0e0;
+    font-size: 1.05em;
+}
+.drivingSchoolAllInfo .costOnService .tblCosts .costs tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+.drivingSchoolAllInfo .costOnService .tblCosts .costs tr td {
+  padding: 15px;
+}
+.drivingSchoolAllInfo .costOnService .tblCosts .costs tr td:nth-child(2n+1) {
+    background: #f4f4f4;
+}
+.drivingSchoolAllInfo  img {
+  max-width: 100%;
+}
+.drivingSchoolAllInfo .costOnService .costTitle {
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .costOnService .add {
+  display: inline-block;
+  background: #ffc107;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 14px;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+.drivingSchoolAllInfo .costOnService .add:hover,.drivingSchoolAllInfo .contactsDrivingSchool .timeWork:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .costOnService .add:focus,.drivingSchoolAllInfo .contactsDrivingSchool .timeWork:focus {
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.2) inset;
+}
+.drivingSchoolAllInfo .costOnService input[type="submit"] {
+  background: #1ea361;
+  border: 0;
+  color: #fff;
+  font-family: Roboto-Medium;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 5px 10px;
+  float: right;
+  margin: 35px 60px 160px 0;
+}
+.drivingSchoolAllInfo .costOnService input[type="submit"]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .costOnService input[type="submit"]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.settings-addCost #dd-days {
+  width: 70%;
+}
+.settings-addCost #dd-category, .settings-addCost .form .right input:not([type="radio"]), #dd-pbi {
+  width: 30%;
+}
+.settings-addCost .form .right .belRub {
+  font-size: 0.8em;
+  font-family: Roboto-Medium;
+  margin-left: 5px;
+}
+.settings-overlay:target+.settings-addCost {
+  width: 70%;
+  max-width: 700px;
+}
+.settings-addCost .form .right.noPadL {
+  margin-left: -21px;
+}
+.settings-addCost .form .right .margR {
+  margin-right: 5px;
+}
+.settings-addCost .form .right .margL {
+  margin-left: 10px;
+}
+.drivingSchoolAllInfo .photobox .downloadLogoText {
+    font-size: 1.1em;
+}
+.drivingSchoolAllInfo .photobox input[type=text] {
+    width: 60%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding-left: 5px;
+    padding: 4px 8px;
+    font-family: Roboto-Light;
+    display: inline-block;
+}
+.drivingSchoolAllInfo .photobox input[type=text]:disabled {
+    background: #fff;
+}
+.drivingSchoolAllInfo .photobox input[type=submit] {
+    display: inline-block;
+    background: #1ea361;
+    border: 0;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 8px;
+    margin-left: 5px;
+}
+.drivingSchoolAllInfo .photobox input[type=submit]:hover {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.drivingSchoolAllInfo .photobox input[type=submit]:focus {
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2) inset;
+  outline: none;
+}
+.drivingSchoolAllInfo .photobox .form {
+    margin: 20px 0 15px 0;
+}
+.drivingSchoolAllInfo .photobox {
+  padding: 0 15px;
+}
+.drivingSchoolAllInfo .photobox .oneTwoThree {
+  padding: 0 45px;
+  margin-top: 30px;
+}
+.drivingSchoolAllInfo .photobox .oneTwoThree img {
+  margin: -10px 5px 0 0;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .photobox .oneTwoThree .little {
+  font-size: 0.7em;
+  margin-left:10px;
+  display: inline-block;
+}
+.drivingSchoolAllInfo .photobox .block {
+  border: 1px solid #a9a9a9;
+  padding: 20px 20px 40px 20px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.drivingSchoolAllInfo .photobox .block .list-item {
+  padding: 0;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item .number {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  width: 22px;
+  height: 23px;
+  z-index: 5;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item img {
+  display: block;
+  width: 100%;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item.one .number {
+  background: url(../img/1-item.png);
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item.two .number {
+  background: url(../img/2-item.png);
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item.three .number {
+  background: url(../img/3-item.png);
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item .bg {
+  position: absolute;
+  left: 0; top:0;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item .bg .bg-fon {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: none;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item .delete {
+  background: url(../img/delete.png);
+  width: 14px;height: 14px;
+  top:10px;
+  right: 25px;
+  position: absolute;
+  display: none;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item:hover .bg .bg-fon,.drivingSchoolAllInfo .photobox .block .list-item .item:hover .delete  {
+  display: block;
+}
+.drivingSchoolAllInfo .photobox .block .list-item .item:hover .number {
+  background-position: 0 25px;
+}
+
+/* ---------------------- NEW STYLES --------------------- */
+/* Это можно вставить в начале, чтобы обнулить все кнопки. Может удалилось случайно, я хз. На иосе коряво выглядит без этого*/
+.sliderContainer .slick-dots li button {
+  padding: 0;
+}
+.cabinet .student {
+  padding-bottom: 16px;
+}
+.smiText ul {
+  padding-left: 0;
+}
+.info-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  -webkit-transition: 1s;
+     -moz-transition: 1s;
+     -o-transition: 1s;
+        transition: 1s;
+  z-index: 8;
+
+}
+.info-slide img {
+  max-width: 100%;
+  position: relative;
+  max-height: 100%;
+}
+.info-slide.view {
+  top: 0;
+}
+.slick-initialized .slick-slide {
+  position: relative;
+}
+.howToStart .instructions .stepDescritpion a {
+  text-decoration: underline;
+}
+.howToStart .instructions .stepDescritpion a:hover {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+.cabinet .exit a {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+/* GALLERY MY STYLES */
+.gallery-image img {
+  max-width: 200px;
+}
+.gallery-image {
+    float: left;
+    margin: 0 100px 50px 0;
+}

@@ -1,0 +1,528 @@
+@media screen and (max-width:1200px)  {
+	.littleNews ul li img,.littleNews ul li .infoPhoto {
+		width: 270px;
+	}
+	.littleNews ul li:nth-child(2) .infoPhoto {
+		margin-left: -135px;
+	}
+	.newsLive ul {
+		width: 2640px;
+	}
+	.newsLive ul li,.newsLive {
+		width: 880px;
+	}
+	.newsLive img {
+		width: 600px;
+	}
+	.newsLive .slideText {
+		width: 280px;
+	}
+	.sliderNewsLive,.newsLive {
+		height: 250px;
+	}
+	ul.tabInfoList li.tabInfoItem:nth-child(2n+1) .dateAndcategory,ul.tabInfoList li.tabInfoItem:nth-child(2n+1) .photo {
+		padding-left: 0;
+	}
+	.howToStart .instructions .phoneImg {
+	  top:8px;
+	  left: -210px;
+	}
+	.cabinet .exit {
+		text-align: center;
+		padding-top: 20px;
+	}
+	.cabinetStudent .dataDrivingSchool .complete {
+		padding-left: 13px;
+	}
+	.settings-popup {
+		width: 50%;
+	}
+	.cabinetTeacher .dataDrivingSchool .milage .medium {
+		padding: 0 30px;
+	}
+	.cabinetTeacher .dataDrivingSchool .milage .tabel {
+		text-align: center;
+	}
+	.cabinetTeacher .dataDrivingSchool .milage .tabel a {
+		margin-top: 10px;
+	}
+	.cabinetTeacher .dataDrivingSchool .mastersMTS table tr td.phone {
+	  width: 40%;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner {
+		padding: 0;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend {
+		text-align: right;
+		padding-right: 15px;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .listImg img {
+		margin-right: 15px;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center,.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left,.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .cost {
+		padding-top: 0;
+	}
+	.gallery-image:nth-child(4n) {
+		margin: 0 100px 50px 0;
+	}
+}
+@media screen and (max-width:992px)  {
+	header .socialNetworks {
+		text-align: right;
+	}
+	header .ok, header .vk {
+		margin-top: 5px;
+	}
+	.downloadGP {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.littleNews ul li .infoPhoto {
+		margin-left: -135px !important;
+		left: 50%;
+	}
+	.littleNews ul,.littleNews ul li {
+		display: block;
+		text-align: center !important;
+		margin-bottom: 20px;
+	}
+	.smiText ul, .smiText ul li {
+		display: block;
+		width: 100%;
+		border: 0;
+	}
+	.copyright p {
+	  padding-left: 0;
+	}
+	.newsLive ul {
+		width: 2040px;
+	}
+	.newsLive ul li,.newsLive {
+		width: 680px;
+	}
+	.newsLive img {
+		width: 400px;
+	}
+	.newsLive .slideText {
+		width: 280px;
+	}
+	ul.tabInfoList li.tabInfoItem {
+		display: block;
+		width: 100%;
+	}
+	.howToStart .instructions .phoneImg {
+		display: none;
+	}
+	.howToStart .instructions .step2 .backgroundStep2 {
+		display: none;
+	}
+	.professional .infoOfDrivingSchool .infoOfDrivingSchoolBlock {
+		text-align: center;
+	}
+	.professional .infoOfDrivingSchool .margLink {
+		margin-left: 0;
+	}
+	.cabinetStudent .dataDrivingSchool .leftCompleted .complete {
+		text-align: right;
+	}
+	.cabinetStudent .dataDrivingSchool {
+		padding-right: 30px;
+	}
+	.settings-popup {
+		width: 60%;
+	}
+	.cabinetTeacher .dataDrivingSchool .mastersMTS {
+	  overflow-x: scroll;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner {
+		text-align: center;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .center {
+		padding-top: 10px;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .left {
+		padding-top: 0;
+	}
+	.cabinetTeacherCode .codes {
+		width: 100%;
+	}
+	.drivingSchoolAllInfo {
+		padding: 0;
+	}
+	.drivingSchoolAllInfo .tabOverall .tblMasters {
+		overflow-x: scroll;
+		padding: 0;
+		margin-left: -4.5px;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool .center {
+		text-align: center;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool input[type="submit"] {
+		float: none;
+		margin: 0;
+	}
+	.settings-graficWorkTime .form {
+		padding: 15px 30px;
+	}
+
+	.drivingSchoolAllInfo .costOnService .tblCosts {
+		overflow-x: scroll;
+		padding: 0;
+		margin-left: -4.5px;
+	}
+}
+@media screen and (max-width:768px)  {
+	header .socialNetworks {
+	 text-align: center;
+	}
+	header .forma1, header .vk {
+		padding-right: 15px;
+	}
+	header .logo {
+		text-align: right;
+	}
+	header .noLie {
+		text-align: center;
+	}
+	header .ok, header .vk {
+		margin-top: 0;
+	}
+	nav ul {
+		position: absolute;
+		background: #FAFAFA url(../img/icon-menu.png) no-repeat 5px 5px;
+	}
+	nav ul li {
+		display: none;
+		border-right: 0;
+	}
+	nav .current {
+		display: block;
+	}
+	nav ul:hover {
+		background: none;
+	}
+	nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.banner {
+		display: none;
+	}
+	#toTop {
+		bottom: 20px;
+		right: 10px;
+	}
+	.allNews .title .textTitle {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	ul.tabInfoList li.tabInfoItem .dateAndcategory .backgroundDC {
+		width: 100%;
+		max-width: 458px;
+	}
+	ul.tabInfoList li.tabInfoItem img {
+		max-width: 100%;
+	}
+	.simiLarNewsList .simiLarNewsItem p {
+		text-align: center;
+	}
+	nav ul li.current,nav ul li.current a{
+	  color: #000;
+	  text-decoration: none;
+	  background: #fff;
+	}
+	.scroll-x {
+	  overflow-x:scroll;
+	}
+	.cabinetStudent .dataDrivingSchool .info {
+		text-align: center;
+	}
+	.cabinetStudent .tableStatus {
+		padding: 0;
+		overflow-x:scroll;
+	}
+	.cabinetStudent .dataDrivingSchool,.cabinetStudent {
+		padding: 0;
+	}
+	.settings-popup {
+		width: 100%;
+	}
+	.settings-popup .form .right,.settings-popup .form .left {
+		text-align: center;
+	}
+	.settings-popup .form .right input:not([type="radio"]) {
+		width: 100%;
+		margin-top: 3px;
+	}
+	.settings-overlay:target+.settings-popup {
+		top:40%;
+	}
+	.settings-popup .form .right input[type=radio] + label .radio,.settings-popup .form .left {
+		margin-top: 5px;
+	}
+	.settings-popup .form .wrapper-dropdown {
+		width: 100%;
+	}
+	.watchExercise .descriptionEx {
+		padding: 0;
+	}
+	.watchExercise .descriptionEx .map .infoExercise {
+		padding-left: 0; padding-right: 0;
+	}
+	.watchExercise .descriptionEx .map .share div, .watchExercise .descriptionEx .map .share .shareText {
+		padding: 0;
+		text-align: center;
+	}
+	.cabinetTeacher .dataDrivingSchool .goToCode {
+		text-align: center;
+	}
+	.cabinetTeacher .dataDrivingSchool .rating {
+		margin-top: 30px;
+		padding: 0;
+	}
+	.cabinetTeacher .dataDrivingSchool .mastersMTS {
+		margin-left: 15px;
+	}
+	.drivingSchool .sort {
+		text-align: center;
+	}
+	.drivingSchool .sort .wrapper-dropdown-cost, .drivingSchool .sort .wrapper-dropdown-rating {
+		width: 70%;
+	}
+	.drivingSchool .sort .cost {
+		margin-bottom: 20px;
+	}
+	.drivingSchool .sort .wrapper-dropdown-cost {
+		margin-left: 70px;
+	}
+	.drivingSchool .listOfDrivingSchool .listOfDrivingSchoolInner .right .recomend {
+		text-align: center;
+		padding-right: 0;
+	}
+	.cabinetTeacherReviews .answer {
+		    padding: 20px 0 15px 0;
+	}
+	.cabinetTeacherCode .tblCodes {
+		overflow-x:scroll;
+		padding: 0;
+	}
+	.cabinetTeacherCode {
+		padding: 0;
+	}
+	.settings-overlay:target+.settings-popup {
+		top: 0;
+		height: 100%;
+		overflow-y:scroll;
+		overflow-x:hidden;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool {
+		text-align: center;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool .nameInput {
+		text-align: center;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool input[type=text] {
+		width: 100%;
+		margin: 15px 0 15px 0;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool .pointOnMap {
+		margin-bottom: 15px;
+	}
+	.drivingSchoolAllInfo .contactsDrivingSchool textarea {
+		margin: 15px 0;
+	}
+	.settings-graficWorkTime .form {
+		padding: 15px 0;
+	}
+	.settings-graficWorkTime .timeFromTo {
+		padding: 0 0 0 45px;
+	}
+	.settings-graficWorkTime input[type=text] { margin-bottom: 10px; }
+	.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel {
+		text-align: center;
+		padding: 10px 0;
+	}
+	.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .panel .noPad div {
+		margin-bottom: 10px;
+	}
+	.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save {
+		text-align: center;
+	}
+	.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save .preview {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.drivingSchoolAllInfo .drivingSchoolDescription .shortTextArea .save .preview a {
+		margin-left: 0;
+	}
+	.drivingSchoolAllInfo .costOnService input[type="submit"] {
+		margin: 20px 0;
+	}
+	.settings-addCost .form .right.noPadL {
+		margin: 0;
+	}
+	.settings-addCost #dd-category, .settings-addCost .form .right input:not([type="radio"]), #dd-pbi,.settings-addCost #dd-days	 {
+		width: 100%;
+	}
+	.drivingSchoolAllInfo .photobox .oneTwoThree {
+		padding: 0 30px;
+	}
+	.professionalInfo .tabsList .tabsItem.photobox {
+		padding: 0;
+	}
+	.drivingSchoolAllInfo .photobox .block {
+		padding: 5px;
+	}
+	.drivingSchoolAllInfo .photobox .block .list-item .item {
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+	.drivingSchoolAllInfo .photobox .block .list-item .item .bg {
+		padding: 5px;
+	}
+	.drivingSchoolAllInfo .photobox .block .list-item .item .number {
+		left: 8px;
+		bottom: 8px;
+	}
+	.drivingSchoolAllInfo .photobox .block .list-item .item .delete {
+		right: 8px;
+		top: 8px;
+	}
+	/* new styles*/
+
+	.answerAndQuestiens .accordion-item {
+	  width: 100%;
+	}
+	.answerAndQuestiens ul {
+	  padding-left: 0;
+	  width: 100%;
+	}
+	.contacts .map .feedback {
+		padding: 10px;
+	}
+	nav {
+	    display: none;
+	}
+	.hidden-menu {
+	  display: block;
+	  position: fixed;
+	  list-style:none;
+	  padding: 70px 0 20px;
+	  margin: 0;
+	  box-sizing: border-box;
+	  width: 150px;
+	  background-color: #2a2a2a;
+	  height: 100%;
+	  top: 0;
+	  left: -200px;
+	  transition: left .2s;
+	  z-index: 9;
+	  -webkit-transform: translateZ(0);
+	  -webkit-backface-visibility: hidden;
+      font-family: Roboto-Light;
+
+	}
+	.hidden-menu li {
+	    padding: 10px 15px;
+	    position: relative;
+	    border-top: 1px solid rgba(0, 0, 0, 0.3);
+	    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+	}
+	.hidden-menu li.active {
+	    background: #1d1d1d;
+	    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	.hidden-menu li.active a {
+	    color: #1ea361;
+	}
+	.hidden-menu li:hover {
+		background: rgba(255, 255, 255, 0.05);
+	}
+	.hidden-menu a {
+	  	color: #fff;
+	  	font-size: 16px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+	.hidden-menu a:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+	.hidden-menu-ticker {
+	  display: none;
+	}
+	.btn-menu {
+	  color: #fff;
+	  padding: 5px;
+	  position: fixed;
+	  top: 10px;
+	  left: 5px;
+	  cursor: pointer;
+	  transition: left .23s;
+	  z-index: 10;
+	  width: 35px;
+	  -webkit-transform: translateZ(0);
+	}
+	.btn-menu span {
+	  display: block;
+	  height: 5px;
+	  background-color: #000;
+	  margin: 5px 0 0;
+	  transition: all .1s linear .23s;
+	  position: relative;
+	}
+	.btn-menu span.first {
+	  margin-top: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu {
+	  left: 110px;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+	  left: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.first {
+	  -webkit-transform: rotate(45deg);
+	  top: 10px;
+	  background: #fff;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.second {
+	  opacity: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.third {
+	  -webkit-transform: rotate(-45deg);
+	  top: -10px;
+	  background: #fff;
+	}
+	header .socialNetworks {
+        text-align: center;
+	    position: absolute;
+	    margin-top: -39px;
+	    right: 7px;
+	}
+	header .top {
+		padding: 0;
+	}
+	header .noLie {
+		margin: -21px 0 0 140px;
+	    font-size: 18px;
+	}
+	.cabinet .exit a {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.cabinet .exit {
+		padding: 10px 0;
+	}
+	/* gallery */
+	.gallery-image { width: 100%; }
+	.article.aboutProject .text {text-align: center;}
+
+	.fixed-menu {
+		position: fixed;
+		width: 30px;
+		height: 30px;
+		right: 5px;
+		top: 5px;
+		background: #000;
+		z-index: 1000
+	}
+}
