@@ -65,6 +65,25 @@
 	.gallery-image:nth-child(4n) {
 		margin: 0 100px 50px 0;
 	}
+	.main-banner .wrap-banner .google-play {
+		bottom: 60px;
+	    left: 121px;
+	}
+	.learner  .learner-drive-control p {
+		margin-bottom: 37px;
+	}
+	.learner  .learner-drive-control .button img {
+		max-width: 80%;
+	}
+	.learner .button img {
+		max-width: 70%;
+	}
+	.learner .learner-drive-control .button {
+		margin-top: 14px;
+	}
+	.reviews .real-time .right .wrap-drc {
+		padding: 27.5px 40px;
+	}
 }
 @media screen and (max-width:992px)  {
 	header .socialNetworks {
@@ -169,6 +188,33 @@
 		overflow-x: scroll;
 		padding: 0;
 		margin-left: -4.5px;
+	}
+	.main-banner .wrap-banner .google-play {
+	    width: 253px;
+	    height: 70px;
+	    background-size: cover;
+	    bottom: 41px;
+	    left: 89px;
+	}
+	.learner .simple div:first-child,.learner  .learner-drive-control {
+		padding: 0 60px;
+		border: none;
+	}
+	.learner  .learner-drive-control p {
+		margin: 18px 0;
+	}
+	.learner .learner-drive-control .button {
+		padding: 0;
+	}
+	.learner .button {
+		padding: 0 196px;
+		margin-bottom: 20px;
+	}
+	.reviews .real-time .left, .reviews .real-time .right {
+		width: 100%;
+	}
+	.reviews .real-time .right .wrap-drc {
+		padding: 60px 45px;
 	}
 }
 @media screen and (max-width:768px)  {
@@ -524,5 +570,42 @@
 		top: 5px;
 		background: #000;
 		z-index: 1000
+	}
+	.main-banner {
+		padding: 25px 15px;
+	}
+	.learner .simple div:first-child, .learner  .learner-drive-control, .learner .simple, .learner .button {
+		padding: 0;
+	}
+	.learner .simple div:first-child {
+		padding: 0 15px;
+	}
+	.learner .simple div:first-child, .learner .learner-drive-control div:first-child {
+			padding-left: 45px;
+	}
+	.learner .button img {
+		width: 160px;
+	}
+	.learner .button {
+		margin-bottom: 40px;
+	}
+	.reviews .real-time .right a {
+		margin-top: 13px;
+	}
+	.reviews .real-time .right .drc {
+		font-size: 18px;
+		width: 100%;
+	}
+	.reviews .real-time .right .wrap-drc {
+		padding: 17px 20px;
+	}
+	.main-banner .wrap-banner .google-play {
+		width: auto;
+		height: auto;
+		left: 13%;
+		bottom: 10%;
+	}
+	.main-banner .wrap-banner .google-play img {
+		width: 45%;
 	}
 }

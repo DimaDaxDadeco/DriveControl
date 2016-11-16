@@ -3060,8 +3060,6 @@ article.aboutProject .text .quote .author {
   background-position: 0 25px;
 }
 
-/* ---------------------- NEW STYLES --------------------- */
-/* Это можно вставить в начале, чтобы обнулить все кнопки. Может удалилось случайно, я хз. На иосе коряво выглядит без этого*/
 .sliderContainer .slick-dots li button {
   padding: 0;
 }
@@ -3109,12 +3107,131 @@ body {
   width: 49%;
   text-align: center;
 }
-
-/* GALLERY MY STYLES */
 .gallery-image img {
   max-width: 200px;
 }
 .gallery-image {
     float: left;
     margin: 0 100px 50px 0;
+}
+.main-banner {
+  padding: 35px 30px 0;
+}
+.main-banner .wrap-banner {
+  width: 100%;
+  position: relative;
+}
+.main-banner .wrap-banner img {
+  max-width: 100%;
+}
+.main-banner .wrap-banner .google-play {
+  width: 313px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  bottom: 85px;
+  left: 147px;
+}
+.learner {
+  font-family: Roboto-Light;
+  font-size: 18px;
+  color: #010101;
+  margin-top: 50px;
+}
+.learner .learner-title {
+  font-family: Roboto-Bold;
+  font-size: 22px;
+  margin: 0 0 20px 0;
+}
+.learner p {
+  position: relative;
+}
+.learner p::before {
+  content: "";
+  position: absolute;
+  background: url(../img/cross.png);
+  width: 27px;
+  height: 28px;
+  left: -46px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.learner .simple {
+  padding-right: 0;
+}
+.learner .simple div:first-child {
+  border-right: 1px solid #dfdfdf;
+  padding: 0 70px 0 133px;
+}
+.learner .button {
+  text-align: center;
+  padding: 0 106px 0 89px;
+  margin-top: 20px;
+}
+.learner .button img {
+  max-width: 60%;
+}
+.learner  .learner-drive-control p::before {
+  background: url(../img/check-mark-true.png);
+  height: 27px;
+}
+.learner  .learner-drive-control {
+  padding: 0 70px 0 80px;
+}
+.learner  .learner-drive-control .button img{
+  max-width: 65%;
+}
+.learner  .learner-drive-control .button {
+      padding: 0 130px 0 0px;
+}
+.reviews {
+  padding: 0 30px;
+}
+.reviews .real-time {
+  margin-top: 50px;
+}
+.reviews .real-time .left img {
+  max-width: 100%;
+  width: 100%;
+}
+.reviews .real-time .left {
+  width: 50%;
+  text-align: right;
+  float: left;
+}
+.reviews .real-time .right {
+  width: 50%;
+  text-align: left;
+  float: right;
+  background: #14a05b;
+  font-family: Roboto-Bold;
+}
+.reviews .real-time .right .drc {
+  font-size: 27px;
+  display: inline-block;
+  /*width: 100%;*/
+  color: #fff;
+}
+.reviews .real-time .right a {
+  font-size: 9.73px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #e7ad48;
+  padding:8px 5px;
+  margin-top: 25px;
+  color: #fff;
+}
+.reviews .real-time .right a:hover {
+  background: #e7ad48;
+  text-decoration: none;
+}
+.reviews .real-time .right .wrap-drc {
+  padding: 48.5px 45px;
+}
+.smiInfo {
+  font-size: 11px;
+}
+.smiText {
+  margin-bottom: 50px;
 }
