@@ -3210,7 +3210,6 @@ body {
 .reviews .real-time .right .drc {
   font-size: 27px;
   display: inline-block;
-  /*width: 100%;*/
   color: #fff;
 }
 .reviews .real-time .right a {
@@ -3231,7 +3230,70 @@ body {
 }
 .smiInfo {
   font-size: 11px;
+  font-family: Roboto-Light;
+  padding: 0 73px;
 }
 .smiText {
   margin-bottom: 50px;
+}
+.reviews .reviews-users  .reviews-users-wrap {
+  background: #bfbfbf;
+  width: 100%;
+  padding: 35px 70px;
+}
+.reviews .reviews-users  .reviews-users-wrap .title {
+  margin:0;
+  font-family: Roboto-Bold;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  font-family: Roboto-Light;
+  font-size: 13px;
+  color: #7b7b7b;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list li {
+  width: 48%;
+  background: #fff;
+  padding: 30px 15px;
+  float: left;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list li:nth-child(2n+1) {
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list img {
+  float: left;
+  border-radius: 42px;
+  margin-right: 10px;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text {
+  position: relative;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text::before {
+  content: "“";
+  font-size: 22px;
+  font-family: Roboto-Bold;
+  position: absolute;
+  left: -12px;
+  top: -8px;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .who {
+  color: #292929;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .who .green {
+  font-size: 14px;
+  font-family: Roboto-Medium;
+  display: inline-block;
+  margin-top: 15px;
+}
+.smi { margin-top: 40px; }
+.smi .title .left {
+  font-family: Roboto-Bold;
+  font-size: 18px;
+  margin-left: 30px;
 }

@@ -84,6 +84,9 @@
 	.reviews .real-time .right .wrap-drc {
 		padding: 27.5px 40px;
 	}
+	.reviews .reviews-users  .reviews-users-wrap .reviews-list {
+		font-size: 11px;
+	}
 }
 @media screen and (max-width:992px)  {
 	header .socialNetworks {
@@ -215,6 +218,11 @@
 	}
 	.reviews .real-time .right .wrap-drc {
 		padding: 60px 45px;
+	}
+	.reviews .reviews-users  .reviews-users-wrap .reviews-list li {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 4%;
 	}
 }
 @media screen and (max-width:768px)  {
@@ -597,7 +605,7 @@
 		width: 100%;
 	}
 	.reviews .real-time .right .wrap-drc {
-		padding: 17px 20px;
+		padding: 30px 20px;
 	}
 	.main-banner .wrap-banner .google-play {
 		width: auto;
@@ -607,5 +615,17 @@
 	}
 	.main-banner .wrap-banner .google-play img {
 		width: 45%;
+	}
+	.reviews .reviews-users  .reviews-users-wrap {
+		padding: 25px 20px;
+	}
+	.smiInfo {
+		padding: 0 15px;
+	}
+	.reviews {
+		padding: 0 5px;
+	}
+	.smi .title .left {
+		margin-left: 0;
 	}
 }
