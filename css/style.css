@@ -3282,6 +3282,19 @@ body {
   left: -12px;
   top: -8px;
 }
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text::after {
+  content: "“";
+  font-size: 22px;
+  font-family: Roboto-Bold;
+  position: absolute;
+  right: -12px;
+  bottom: -8px;
+ -moz-transform: rotate(180deg); /* Для Firefox */
+  -ms-transform: rotate(180deg); /* Для IE */
+  -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg); /* Для Opera */
+  transform: rotate(180deg);
+}
 .reviews .reviews-users  .reviews-users-wrap .reviews-list .who {
   color: #292929;
 }
@@ -3296,4 +3309,118 @@ body {
   font-family: Roboto-Bold;
   font-size: 18px;
   margin-left: 30px;
+}
+header .logo {
+  text-align: right;
+}
+
+
+
+.reviews-users-container #container-outer {
+  float:left;
+  overflow: hidden;
+  background: #fff;
+}
+.reviews-users-container .container-inner {
+  float:left;
+  position: relative;
+  right:48%;
+  margin-bottom: 20px;
+}
+.reviews-users-container .container-inner::after {
+  content: "";
+  width: 192%;
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  bottom: -20px;
+  background: #bfbfbf;
+  z-index: 2;
+}
+.reviews-users-container #container-outer .left {
+  float: left;
+  width: 48%;
+  position: relative;
+  left: 48%;
+  z-index: 3;
+  padding: 30px 15px;
+}
+.reviews-users-container #container-outer .left::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 37.6px;
+  right: -37.6px;
+  top: 0;
+  background: #bfbfbf;
+  z-index: -1;
+}
+.reviews-users-container #container-outer .right {
+  float: right;
+  width: 48%;
+  position: relative;
+  left: 48%;
+  z-index: 3;
+  padding: 30px 15px;
+}
+.reviews-users-container #container-outer .right::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 37.6px;
+  left: -37.6px;
+  top: 0;
+  background: #bfbfbf;
+  z-index: -1;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list img {
+  float: left;
+  border-radius: 42px;
+  margin-right: 10px;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text {
+  position: relative;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text::before {
+  content: "“";
+  font-size: 22px;
+  font-family: Roboto-Bold;
+  position: absolute;
+  left: -12px;
+  top: -8px;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .text::after {
+  content: "“";
+  font-size: 22px;
+  font-family: Roboto-Bold;
+  position: absolute;
+  right: -12px;
+  bottom: -8px;
+ -moz-transform: rotate(180deg); /* Для Firefox */
+  -ms-transform: rotate(180deg); /* Для IE */
+  -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg); /* Для Opera */
+  transform: rotate(180deg);
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .who {
+  color: #292929;
+}
+.reviews .reviews-users  .reviews-users-wrap .reviews-list .who .green {
+  font-size: 14px;
+  font-family: Roboto-Medium;
+  display: inline-block;
+  margin-top: 15px;
+}
+footer {
+  margin-bottom: 45px;
+}
+.reviews .real-time .left { position: relative; }
+.reviews .real-time .left .real-time-info {
+  width: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
