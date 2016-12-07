@@ -559,6 +559,7 @@
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu {
 	  left: 110px;
+	  margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
 	  left: 0;
@@ -566,7 +567,7 @@
 	.hidden-menu-ticker:checked ~ .btn-menu span.first {
 	  -webkit-transform: rotate(45deg);
 	  top: 10px;
-	  background: #fff;
+	  background: #d0d0d0;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second {
 	  opacity: 0;
@@ -574,7 +575,7 @@
 	.hidden-menu-ticker:checked ~ .btn-menu span.third {
 	  -webkit-transform: rotate(-45deg);
 	  top: -10px;
-	  background: #fff;
+	  background: #d0d0d0;
 	}
 	header .socialNetworks {
         text-align: center;
@@ -671,4 +672,26 @@
 	}
 	.reviews-users-container .container-inner::after {display: none;}
 	.reviews .real-time .left .real-time-info {width: 55%}
+	.btn-menu span {
+		background: #d0d0d0;
+	}
+	.mobile-menu {
+		height: 115px;
+		position: fixed;
+		background: red;
+		left: 0;
+		top: 0;
+		z-index: 99;
+		background: rgba(0,0,0,.5);
+	}
+	.mobile-menu .btn-menu {
+		margin-top: 31px;
+	}
+	.mobile-logo {
+		text-align: right;
+	}
+	.mobile-logo img {
+		margin-top: 22px;
+	}
+	header .bottom {margin-top: 115px;}
 }
