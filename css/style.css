@@ -372,6 +372,12 @@ nav ul li:last-child {
   font-size: 0.5625em;
   color: #000;
 }
+.cabinet .forgotPassword a {
+  text-decoration: underline;
+}
+.cabinet .forgotPassword a:hover, .cabinet .forgotPassword a:focus {
+  text-decoration: none;
+}
 /*СЛАЙДЕР*/
 .sliderContainer {
   padding: 30px;
@@ -3427,7 +3433,8 @@ nav ul li a {
   font-size: 12px;
 }
 nav ul li a:hover,
-nav ul li.current a {
+nav ul li.current a,
+nav ul li a:focus {
   color: #ffc107;
 }
 header .bottom .logo {
