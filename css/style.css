@@ -294,12 +294,9 @@ header .bottom {
   font-family: Roboto-Bold;
   font-size: 1.1em;
 }
-nav {
-  padding-top: 40px;
-}
 nav ul {
   display: table;
-  height: 40px;
+  height: 30px;
 }
 nav ul li {
   list-style-type: none;
@@ -311,11 +308,7 @@ nav ul li {
 nav ul li.nobordr {
   border-right:0;
 }
-nav ul li.current,nav ul li.current a{
-  color: #fff;
-  text-decoration: none;
-  background: #1ea361;
-}
+
 nav ul li a:hover,nav ul li.current a:hover {
   text-decoration: none;
   color: #000;
@@ -334,7 +327,7 @@ nav ul li:last-child {
   padding-top: 16px;
 }
 .cabinet .identification {
-  padding: 12px 0 0 15px;
+  padding-left: 15px
 }
 .cabinet input{
   font-size: 0.625em;
@@ -342,7 +335,6 @@ nav ul li:last-child {
   height: 20px;
   color: #606060;
   border: 1px solid #000;
-  padding-left: 8px;
   font-family: Roboto-Light;
 }
 .cabinet input:focus {
@@ -373,7 +365,7 @@ nav ul li:last-child {
 }
 .cabinet .forgotPassword {
   text-align: right;
-  padding: 6px 0 0 15px;
+  padding-left: 15px;
 }
 .cabinet .forgotPassword a,.cabinet .forgotPassword a:hover, .cabinet .forgotPassword a:focus {
   font-family: Roboto-Light;
@@ -3423,4 +3415,55 @@ footer {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+header .bottom {
+  background: rgba(0, 0, 0, 0.4);
+}
+nav { margin-top: 30px }
+nav ul li a {
+  font-family: Roboto-Medium;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+nav ul li a:hover,
+nav ul li.current a {
+  color: #ffc107;
+}
+header .bottom .logo {
+  padding: 20px 0;
+}
+.cabinet .student { color: #fff }
+
+.cabinet input[type="text"] {
+  padding-left: 8px;
+  background: #d3d3d3;
+}
+.cabinet input[type="text"]::-webkit-input-placeholder {color:#000;}
+.cabinet input[type="text"]::-moz-placeholder          {color:#000;}
+.cabinet input[type="text"]:-moz-placeholder           {color:#000;}
+.cabinet input[type="text"]:-ms-input-placeholder      {color:#000;}
+
+.socialNetworks {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+}
+.socialNetworks .imgBlock {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.socialNetworks .ok .imgBlock {
+  background: url(../img/ok-icon-new.png) no-repeat;
+}
+.socialNetworks .vk .imgBlock {
+  background: url(../img/vk-icon-new.png) no-repeat;
+  margin-left: -2px;
+}
+.socialNetworks .facebook .imgBlock {
+  background: url(../img/facebook-icon-new.png) no-repeat;
+}
+.socialNetworks .intagram .imgBlock {
+  background: url(../img/instagram-icon-new.png) no-repeat;
 }

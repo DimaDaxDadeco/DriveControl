@@ -248,6 +248,8 @@
 		text-align: center;
 	}
 	.reviews-users-container #container-outer .text-left {text-align: left;}
+	nav { margin-top: 0; }
+	.logo-wrap { text-align: center; }
 }
 @media screen and (max-width:768px)  {
 	.reviews-users-container #container-outer .left::after {
@@ -694,4 +696,11 @@
 		margin-top: 22px;
 	}
 	header .bottom {margin-top: 115px;}
+	.main {
+		margin-top: 114px;
+	}
+	.socialNetworks {
+		right: 20px;
+		top: 10px;
+	}
 }

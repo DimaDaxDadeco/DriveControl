@@ -1,15 +1,4 @@
 $(document).ready(function() {
-  /*menu hover*/
-  $('nav ul li').mouseenter(function() {
-    var n = $(this).index();
-    $(this).addClass('nobordr');
-    $('nav ul li').eq(n-1).addClass('nobordr');
-  })
-  $('nav ul li').mouseleave(function() {
-    var n = $(this).index();
-    $(this).removeClass('nobordr');
-    $('nav ul li').eq(n-1).removeClass('nobordr');
-  })
   /*big slider*/
     if ($('.sliderContainer').length) {
       $('.sliderContainer').slick({
