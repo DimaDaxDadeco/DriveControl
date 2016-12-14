@@ -690,15 +690,12 @@
 		margin-top: 31px;
 	}
 	.mobile-logo {
-		text-align: right;
+		text-align: center;
 	}
 	.mobile-logo img {
 		margin-top: 22px;
 	}
 	header .bottom {margin-top: 115px;}
-	.main {
-		margin-top: 114px;
-	}
 	.socialNetworks {
 		right: 20px;
 		top: 10px;

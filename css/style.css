@@ -327,7 +327,8 @@ nav ul li:last-child {
   padding-top: 16px;
 }
 .cabinet .identification {
-  padding-left: 15px
+  padding-left: 15px;
+  padding-right: 0;
 }
 .cabinet input{
   font-size: 0.625em;
