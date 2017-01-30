@@ -760,8 +760,9 @@ ul.paginationList li.activePagination {
   font-family: Roboto-Medium;
   color: #000;
   font-weight: 500;
-  padding-left: 15px;
+  padding: 0 15px;
   margin: 0;
+  text-align: center;
 }
 .newsDetails .date {
   font-family: Roboto-LightItalic;
@@ -782,20 +783,23 @@ ul.paginationList li.activePagination {
 .newsDetails .newDetailsText p {
   margin-top: 0;
   color: #000;
-  padding-right: 35px;
   font-size: 0.9em;
   font-family: Roboto-Light;
   padding-top: 25px;
   color: #444;
+  text-align: justify;
 }
 .newsDetails .newDetailsText img {
-  float: left;
-  padding-right: 20px;
   max-width: 100%;
 }
 .newsDetails .newDetailsText .big72 {
   font-size: 4.5em;
   font-family: Roboto-Black;
+}
+.newsDetails .newDetailsText .newDetailsTextImg {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
 .newsDetails .newDetailsText p.quote {
   font-family: Roboto-LightItalic;
@@ -808,8 +812,12 @@ ul.paginationList li.activePagination {
   font-family: Roboto-Light;
   box-shadow:  0px 6px 5px -3px rgba(0,0,0,0.1);
 }
+.similarNews  {
+  /* width: 30%;
+  float: right; */
+}
 .similarNews .title {
-  padding: 25px 0;
+  padding: 8px 0;
   font-size: 0.9375em;
 }
 .simiLarNewsList {
@@ -817,15 +825,14 @@ ul.paginationList li.activePagination {
   padding: 0
 }
 .simiLarNewsList .simiLarNewsItem {
-  float: left;
   font-family: Roboto-Light;
   font-size: 0.9em;
-  padding-bottom: 75px;
+  padding-bottom: 20px;
   text-align: center;
   list-style: none;
 }
 .simiLarNewsList .simiLarNewsItem p {
-  text-align: left;
+  text-align: center;
 }
 .howToStart {
   background: #fff;
