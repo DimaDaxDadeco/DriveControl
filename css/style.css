@@ -3482,3 +3482,53 @@ header .bottom .logo {
 .socialNetworks .intagram .imgBlock {
   background: url(../img/instagram-icon-new.png) no-repeat;
 }
+
+.main__links {
+  padding: 0 45px;
+  margin-top: 25px;
+  font-family: Roboto-Medium;
+  text-decoration: uppercase;
+  font-size: 18px;
+  text-align: center;
+}
+.main__links a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+.main__links a::after {
+  content: '';
+  background: url(../img/link__arrow-right.png);
+  position: absolute;
+  width: 9px;
+  height: 14px;
+  right: -20px;
+  top: 50%;
+  margin-top: -7px;
+}
+.main__links a:hover::after {
+  background-position: 0 15px;
+}
+.main__links a:hover,
+.main__links a:focus {
+  color: #ffc107;
+  text-decoration: none;
+}
+.main__links_wrap {
+  padding: 15px 0;
+  background: #505050;
+}
+.main__links_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main__links_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  border-right: 1px solid #7b7b7b;
+}
+.main__links_item:last-child {
+  border-right: 0;
+}

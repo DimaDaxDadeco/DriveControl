@@ -95,6 +95,9 @@
 	  width: 29.6px;
 	  left: -29.6px;
 	}
+	.main__links_item {
+		width: 32%;
+	}
 }
 @media screen and (max-width:992px)  {
 	.reviews-users-container #container-outer .left::after {
@@ -699,5 +702,20 @@
 	.socialNetworks {
 		right: 20px;
 		top: 10px;
+	}
+	.main__links_wrap {
+		padding: 0;
+	}
+	.main__links_item {
+		width: 100%;
+		padding: 15px 0;
+  		border-bottom: 1px solid #7b7b7b;
+	}
+	.main__links_item:last-child {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+	.main__links {
+		padding: 0 20px
 	}
 }
