@@ -253,6 +253,35 @@
 	.reviews-users-container #container-outer .text-left {text-align: left;}
 	nav { margin-top: 0; }
 	.logo-wrap { text-align: center; }
+	.news-dc__list_item {
+		margin-bottom: 15px;
+	}
+	.news-dc__list_item img {
+		width: auto;
+		max-width: 100%;
+	}
+	.news-dc__list_item {
+		text-align: center;
+	}
+	.news-dc__list_item-wrap {
+		display: inline-block;
+	}
+	.news-dc__list_item:last-child {
+		text-align: center;
+	}
+	.news-dc {
+		padding: 0 20px;
+	}
+	.news-dc__main {
+		height: auto;
+		padding: 0;
+	}
+	.news-dc__main img {
+		max-width: 100%;
+	}
+	.news-dc__main_img-wrap {
+		padding: 0;
+	}
 }
 @media screen and (max-width:768px)  {
 	.reviews-users-container #container-outer .left::after {
