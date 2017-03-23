@@ -282,6 +282,11 @@
 	.news-dc__main_img-wrap {
 		padding: 0;
 	}
+	.news-dc__title,
+	.news-dc__see-all-wrap,
+	.news-dc__head-line {
+		padding: 0;
+	}
 }
 @media screen and (max-width:768px)  {
 	.reviews-users-container #container-outer .left::after {
