@@ -752,4 +752,16 @@
 	.main__links {
 		padding: 0 20px
 	}
+	.news-dc__list_item,
+	.news-dc__list {
+		padding: 0;
+	}
+	.news-dc__list_item-wrap {
+		padding: 0;
+		width: 100%;
+	}
+	.news-dc__list_item img {
+		max-width: none;
+		width: 100%;
+	}
 }
